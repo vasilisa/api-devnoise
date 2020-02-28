@@ -61,7 +61,7 @@ def get_participant_score(participant_id,game_id,prolific_id):
 
     # If the prolific_id is provided than look up based on the prolific UID
 
-    if prolific_id =='undefined' || prolific_id =='kids': 
+    if (prolific_id =='undefined') or (prolific_id =='kids'): 
         query      = ParticipantsData.query.filter_by(participant_id=participant_id)
     else:
         query      = ParticipantsData.query.filter_by(prolific_id=prolific_id)
