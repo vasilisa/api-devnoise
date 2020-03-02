@@ -7,13 +7,12 @@ from models.db import db
 from models.install import install_models
 
 
-#to test well functioning : https://devnoise.osc-fr1.scalingo.io/testmethod
+#to test well functioning : https://rlnoise.osc-fr1.scalingo.io/testmethod
 warnings.filterwarnings("ignore")
 
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
-
 
 db.init_app(app)
 CORS(app)
