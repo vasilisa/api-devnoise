@@ -42,6 +42,7 @@ class ParticipantsData(BaseObject, Model):
     def get_prolific_id(self):
         return str(self.prolific_id)
 
+
     def get_game_id(self):
         return str(self.game_id)
 
@@ -75,7 +76,7 @@ class ParticipantsData(BaseObject, Model):
 
     def get_completed(self): 
         return str(self.completed)
-
+    
     def errors(self):
         errors = super(ParticipantsData, self).errors()
         return errors

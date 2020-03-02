@@ -13,7 +13,7 @@ import json
 def generate_game_id(participant_id,prolific_id,date):
 	
 	participant = ParticipantsGame()
-	game_id     = numpy.random.randint(1,30,1)[0] # to be changed for later 
+	game_id     = numpy.random.randint(1,100,1)[0]
 
 	participant.participant_id  = int(participant_id)
 	participant.prolific_id     = str(prolific_id)
@@ -23,6 +23,7 @@ def generate_game_id(participant_id,prolific_id,date):
 
 
 	BaseObject.check_and_save(participant)
+
     
 	# format the query into a dictionnary first:
 	result              = {}

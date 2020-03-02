@@ -7,6 +7,7 @@ from models.game_blocks import GameBlocks
 from models.participants_data import ParticipantsData
 from models.games import Games
 from models.participants_game import ParticipantsGame
+from models.participants_question_data import ParticipantsQuestionData
 from models.participants_data_bonus import ParticipantsDataBonus
 
 
@@ -19,4 +20,5 @@ __all__ = (
     'ParticipantsData',
     'ParticipantsDataBonus', 
     'ParticipantsGame',
+    'ParticipantsQuestionData'
 )

@@ -14,7 +14,11 @@ class Games(BaseObject, Model):
     block_feedback     = Column(Integer, nullable=False)
     symbol_1           = Column(VARCHAR(length=1000), nullable=False) 
     symbol_2           = Column(VARCHAR(length=1000), nullable=False)
+    # shape              = Column(VARCHAR(length=100), nullable=False) 
+    # color              = Column(VARCHAR(length=100), nullable=False)
     
+    
+
     def get_id(self):
         return str(self.id)
 
@@ -33,6 +37,12 @@ class Games(BaseObject, Model):
 
     def get_symbol_2(self):
         return str(self.symbol_2)
+
+    # def get_shape(self):
+    #     return str(self.shape)
+
+    # def get_color(self):
+    #     return str(self.color)
 
     def errors(self):
         errors = super(Games, self).errors()
