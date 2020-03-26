@@ -61,16 +61,19 @@ def get_participant_score(participant_id,game_id,prolific_id):
 
     # If the prolific_id is provided than look up based on the prolific UID
 
-    if (prolific_id =='undefined') or (prolific_id =='kids'): 
+    if prolific_id =='undefined': 
         query      = ParticipantsData.query.filter_by(participant_id=participant_id)
     else:
         query      = ParticipantsData.query.filter_by(prolific_id=prolific_id)
 
 
-    rel_perf   = query.all()    
-    rel_perf_blocks = numpy.concatenate([numpy.array(rel_perf[i].get_block_perf()[1:-1].split(',')[-2:], dtype=numpy.float) for i in range(len(rel_perf))])
+    rel_perf        = query.all()    
+    rel_perf_blocks = numpy.concatenate([numpy.array(rel_perf[i].get_block_perf().split(',')[-1:], dtype=numpy.float) for i in range(len(rel_perf))])
+    
+    app.logger.info(rel_perf_blocks)
     
     meanperf        = numpy.mean(rel_perf_blocks[1:])
+
     
     # Get the maxperf per block from the other table 
     query     = GameBlocks.query.filter_by(game_id=game_id)
@@ -80,16 +83,16 @@ def get_participant_score(participant_id,game_id,prolific_id):
     max_perf_blocks = numpy.concatenate([numpy.array(max_perf[i].get_maxreward().split(',')[-1:], dtype=numpy.float) for i in range(len(max_perf))])
     meanmaxperf     = numpy.mean(max_perf_blocks[1:]) # exclude the first 1 training session 
 
-    app.logger.info(max_perf_blocks)
-
     ratio = meanperf/meanmaxperf
 
+    app.logger.info(meanperf)
+    app.logger.info(meanmaxperf)
     app.logger.info(ratio)
     
 
-    if ratio < 0.5: 
+    if ratio < 0.4: 
         bonus = 0
-    elif ratio >= 0.7: 
+    elif ratio >= 0.6: 
          bonus = 3.0
     else:
         bonus = 1.5
