@@ -1,34 +1,31 @@
 <div class="instruct" id="main">
 
-  <p>After you have positioned the space bucket, you will rate how confident you are that the asteroid will land on the bucket. Your confidence can range from 1 to 100.</p>
+  <p>After you have positioned the space bucket on the ring, you will rate how confident you are that the asteroid will land on the bucket. Your confidence can range from <strong>low</strong> to <strong>high</strong>.</p>
 
-<!-- <img src="static/images/stim_confbar.png" alt="image failed to load" style="width:400;height:70px;"> -->
   <div id="ps_instruct_2"></div>
-  <p>A value of <strong style="color:white;">1</strong> indicates that you are <strong style="color:white;">very uncertain</strong> that the asteroid will land in your bucket. <br>
-  A value of <strong style="color:white;">100</strong> indicates that you are <strong style="color:white;">very certain</strong> that the asteroid will land in your bucket.</p>
 
-  <p>The small orange bar in the middle of the scale indicates your level of confidence. To change the level of your confidence, use the <strong style="color:white;">left/right ARROW keys</strong>.</p>
-  <br>
-  <p>You may try this now to see how it is like with the confidence scale presented above.</p>
+  <p>Let's try it now.</p>
 
-  <p>To move the orange indicator <strong style="color:white;">leftward</strong>, press the <strong style="color:white;">left ARROW</strong> key.<br>
-  To move the orange indicator <strong style="color:white;">rightward</strong>, press the <strong style="color:white;">right ARROW</strong> key.</p>
+  <p>A <strong style="color:white">low</strong> confidence means that you are <strong style="color:white;">very uncertain</strong> that the asteroid will land in your bucket. <br>
+  A <strong style="color:white">high</strong> confidence means that you are <strong style="color:white;">very certain</strong> that the asteroid will land in your bucket.</p>
 
-  <p>Press the <strong style="color:white;">SPACEBAR</strong> to <strong>confirm</strong> your confidence indicator position.</p>
+  <p>The small orange bar in the middle of the scale indicates your level of confidence.</p> 
+  
+  <p>To show that you are <strong style="color:white">less</strong> certain, move the orange indicator <strong style="color:#56D8DB;">leftward</strong> by pressing the <strong style="color:#56D8DB;;">LEFT ARROW</strong> key.<br>
+  To show that you are <strong style="color:white">more</strong> certain, move the orange <strong style="color:#EA3C13;">rightward</strong> by pressing the <strong style="color:#EA3C13;">RIGHT ARROW</strong> key.</p>
+  
+  <p>Press the <strong style="color:#54DC5E;">SPACEBAR</strong> to <strong>confirm</strong> your confidence indicator position.</p>
 
-  <br>
-
+  <img class="keyboard" src="/static/images/keyboard.png" alt="image failed to load" style="width:800px; height:220px;padding-top:5px; padding-bottom:1px; position:relative">
+  <div class="instruct" id="main"></div>
   <p>Please do your best to rate your confidence accurately!</p> 
-    <p>Be sure to make use of the full length of the scale throughout the task.</p>
-
-  <br>
-<div id="nextButton" style="visibility: visible;">
-<input type="button" class="continue" id="continue" value="Next" />
-</div>
-</div>
+  <p>Be sure to make use of the full length of the scale throughout the task.</p>
+  <div id="nextButton" style="visibility: visible;">
+  <input type="button" class="continue" id="continue" value="Next" />
+  </div>
+  </div>
 
 <script type="text/javascript">
-
 
 //setTimeout(function(){ $('div#nextButton').css('visibility','visible'); }, 8000);
 // for keyboard functions
@@ -51,7 +48,7 @@ var col_white       = '#FFFFFF'; // aka rgb 000 000 000bucket          = '#FF800
 var  conf_barHeight       = 20;
 var  conf_barWidth        = 500;
 var  conf_indRand         = [25,75];
-var  conf_indHeight       = conf_barHeight; //for the indicatior
+var  conf_indHeight       = conf_barHeight+10; //for the indicatior
 var  conf_indWidth        = conf_barWidth/100;
 var  conf_range           = [1,100]; // min and max value of conf?
 var  conf_startPos        = 50;
@@ -76,20 +73,22 @@ function draw_confBar(canvas_xCenter, canvas_height, conf_barWidth, conf_barHeig
 	//confidence box
 	var confBar = paper.rect(canvas_xCenter - (conf_barWidth / 2), canvas_height/2, conf_barWidth, conf_barHeight).attr({
 		stroke: col_white,
-		"stroke-width": 3,
+		"stroke-width": 2,
 		fill: col_confBar
 	});
 
 	//confidence text
-	var confBegin = paper.text(canvas_xCenter - (conf_barWidth / 2), canvas_height/2 - 15, "1 - very uncertain").attr({
+	var confBegin = paper.text(canvas_xCenter - (conf_barWidth / 2), canvas_height/2 - 15, "very uncertain").attr({
 		stroke: col_white ,
   	"font-size": 25,
+    "padding-bottom":5,
   	fill: col_white 
 	});
-	var confEnd = paper.text(canvas_xCenter + (conf_barWidth / 2), canvas_height/2 - 15, "100 - very certain").attr({
+	var confEnd = paper.text(canvas_xCenter + (conf_barWidth / 2), canvas_height/2 - 15, "very certain").attr({
 		stroke: col_white ,
 		"font-size": 25,
     "padding-top":5,
+    "padding-bottom":5,
 		fill: col_white 
 	});
 

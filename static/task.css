@@ -50,6 +50,7 @@ strong {
 
 #main {
 	margin: 0 auto;
+	margin-top: -10px;
 	width:800px;
 	font-size: 100%;
 	padding-top:50px;

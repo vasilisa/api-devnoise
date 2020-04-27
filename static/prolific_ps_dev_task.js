@@ -217,7 +217,7 @@ var data_pracReset     = 1;     //this is the counter for how many times they re
      $('select').each( function(i, val) {
 //correct answers are 4, 3, 3, 2, 4
                       if(this.id =="coinAimCheck"){
-                      correct = (this.value == 4)? 1 : 0;
+                      correct = (this.value == 3)? 1 : 0; // this is modified for kids 
                          if(correct === 0){
                          instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2', 'ps_instruct_3']);
 												 	data_pracReset++;
@@ -241,7 +241,7 @@ var data_pracReset     = 1;     //this is the counter for how many times they re
                       }
 
                       else if(this.id == "confRateCheck"){
-                      correct = (this.value == 3)? 1 : 0;
+                      correct = (this.value == 2)? 1 : 0;
                          if(correct === 0){
                          instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2', 'ps_instruct_3']);
 												 	data_pracReset++;
@@ -265,7 +265,7 @@ var data_pracReset     = 1;     //this is the counter for how many times they re
 											}
 
 											else if(this.id == "LowConfCheck"){
-											correct = (this.value == 4)? 1 : 0;
+											correct = (this.value == 3)? 1 : 0;
 												 if(correct === 0){
 												 instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2', 'ps_instruct_3']);
 											data_pracReset++;
@@ -468,7 +468,7 @@ var ExptPhase = function() {
     var stim_staHazRate     = 0.025; //4 changes in 150 trials (or 3, because the first one signals change)
 	//	var stim_midHazRate     = 0.08; //eight changes in 100 trials
     var stim_volHazRate     = 0.125; //19 changes in 150 trials (or 18, because the first one signals change)
-		var stim_pracHazRate	  = 0.01;
+		var stim_pracHazRate	  = 0.025; // orig 0.01 
     var stim_cirDia         = 500; // diameter of big circle (every degree = 4 px)
     var stim_cirThickness   = 15;
     var stim_cirNPos        = 360; // number of possible end points on circle
@@ -484,11 +484,11 @@ var ExptPhase = function() {
     var stim_coord = circleCoor(stim_cirNPos, canvas_xCenter, canvas_yCenter, (stim_cirDia-stim_dotDia)/2);
 
     //confidence bar variables
-    var  conf_barHeight       = 20;
+    var  conf_barHeight       = 20; //20
     var  conf_barWidth        = 500;
 		var  conf_barSpeed        = 1; //was 2
 		var  conf_indRand         = [25,75];
-    var  conf_indHeight       = conf_barHeight; //for the indicatior
+    var  conf_indHeight       = conf_barHeight+10; //for the indicatior
     var  conf_indWidth        = conf_barWidth/100;
     var  conf_range           = [1,100]; // min and max value of conf?
 		var  conf_check           = []; //this is for the array to check if they moved their confidence or not
@@ -497,10 +497,10 @@ var ExptPhase = function() {
 
     // THIS IS TO CALCULATE CPP AND PRESET PARTICLE LOCATION (IN DEGREES) FOR STABLE AND VOLATILE BLOCKS
  		var nCond          = set_cond.length; // just one condition with High Hazard rate 
-    var nTrialsPerCond = 150;  // DEBUG ORIG =200
-		var nTrialsPrac    = 10;   // DEBUG ORIG = 10
+    var nTrialsPerCond = 4; // 150; 
+		var nTrialsPrac    = 2;   // DEBUG ORIG = 10
 		var nTrialsTotal   = nTrialsPerCond*nCond; // 1 condition 
-		var nBlocks        = 3;   //  4 blocks of 50 trials each DEBUG ORIG = 5 
+		var nBlocks        = 2;   //  3 blocks of 50 trials each DEBUG ORIG = 5 
 		var nTrialsPerBlock= Math.floor(nTrialsTotal/nBlocks); //this has to be divisible by nBlocks
 
     console.log(nTrialsPrac)
@@ -639,12 +639,12 @@ function draw_confBar(canvas_xCenter, canvas_height, conf_barWidth, conf_barHeig
 	});
 
 	//confidence text
-	var confBegin = paper.text(canvas_xCenter - (conf_barWidth / 2), canvas_height - 5, "1 - very uncertain").attr({
+	var confBegin = paper.text(canvas_xCenter - (conf_barWidth / 2), canvas_height - 5, "very uncertain").attr({
 		stroke: col_white,
 		"font-size": 25,
 		fill: col_white
 	});
-	var confEnd = paper.text(canvas_xCenter + (conf_barWidth / 2), canvas_height - 5, "100 - very certain").attr({
+	var confEnd = paper.text(canvas_xCenter + (conf_barWidth / 2), canvas_height - 5, "very certain").attr({
 		stroke: col_white,
 		"font-size": 25,
 		fill: col_white
@@ -731,7 +731,7 @@ function draw_pracConfirmText(canvas_height, canvas_width,col_white) {
 
 	var pracConfirmText = paper.text(canvas_width/2, canvas_height/2+80, "Press the SPACEBAR to confirm its position.").attr({
 		stroke: col_white,
-		"font-size": 15,
+		"font-size": 20,
 		"font-family":" Verdana, Helvetica, sans-serif",
 		fill: col_white
 	});
@@ -743,16 +743,16 @@ function draw_pracConfirmText(canvas_height, canvas_width,col_white) {
 
 function draw_pracConfText(canvas_height, canvas_width,col_white) {
 
-	var pracConfText1 = paper.text(canvas_width/2, canvas_height/2+40, "Press the RIGHT arrow key to move \nthe confidence indicator rightward.").attr({
+	var pracConfText1 = paper.text(canvas_width/2, canvas_height/2+40, "Press the RIGHT arrow key if you feel \nMORE certain.").attr({
 		stroke: col_white,
-		"font-size": 15,
+		"font-size": 20,
 		"font-family":" Verdana, Helvetica, sans-serif",
 		fill: col_white
 	});
 
-	var pracConfText2 = paper.text(canvas_width/2, canvas_height/2-40, "Press the LEFT arrow key to move \nthe confidence indicator leftward.").attr({
+	var pracConfText2 = paper.text(canvas_width/2, canvas_height/2-40, "Press the LEFT arrow key if you feel \nLESS certain.").attr({
 		stroke: col_white,
-		"font-size": 15,
+		"font-size": 20,
 		"font-family":" Verdana, Helvetica, sans-serif",
 		fill: col_white
 	});
@@ -765,16 +765,16 @@ function draw_pracConfText(canvas_height, canvas_width,col_white) {
 
 function draw_pracText(canvas_height, canvas_width,col_white) {
   
-	var pracText1 = paper.text(canvas_width/2, canvas_height/2+40, "Press the RIGHT arrow key to \nmove the bucket clockwise.").attr({
+	var pracText1 = paper.text(canvas_width/2, canvas_height/2+40, "Press the LEFT or RIGHT arrow keys to \nmove the bucket on the ring.").attr({
 		stroke: col_white,
-		"font-size": 15,
+		"font-size": 20,
 		"font-family":" Verdana, Helvetica, sans-serif",
 		fill: col_white,
   });
 
-	var pracText2 = paper.text(canvas_width/2, canvas_height/2-40, "Press the LEFT arrow key to \nmove the bucket counter-clockwise.").attr({
+	var pracText2 = paper.text(canvas_width/2, canvas_height/2-40,"").attr({
 		stroke: col_white,
-		"font-size": 15,
+		"font-size": 20,
 		"font-family":" Verdana, Helvetica, sans-serif",
 		fill: col_white,
   });
@@ -1280,7 +1280,7 @@ progPageText = paper.text(canvas_xCenter, canvas_yCenter, "Well done so far! \nB
 	stroke: col_white,
 	fill: col_white,
 "font-family":" Verdana, Helvetica, sans-serif",
-"font-size":16
+"font-size":25
 });
 
 
