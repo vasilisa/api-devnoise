@@ -2,12 +2,13 @@
 
 
 [Database Parameters]
-; database_url: mysql://root:pwd@localhost/rlnoise_kids
+; database_url: mysql://root:pwd@localhost/covid19 // replaced by the OSC SCALINGO DB params
+
 
 [Server Parameters]
-; host: localhost 
-; port: 5000  
-
+host: udecmac.osc-fr1.scalingo.io 
+;localhost REPLACE BY SCALINGO HERE ?  
+port: 5000  
 cutoff_time: 120         
 ; Time in minutes when we assume a subject gave up
 support_IE: True        
@@ -16,12 +17,12 @@ logfile: app_log.txt
 loglevel = 2 
 ; 0=DEBUG, 1=INFO, 2=WARNING, 3=ERROR, 4=CRITICAL
 
-debug: true             
+debug: false             
 ; NEVER!!! leave this on when exposing the server to the public.
 
 ; MAYBE CONFIGURE LATER IF ACCESSING THE DB from the python api   
-login_username: examplename
-login_pw: examplepassword
+; login_username: examplename
+; login_pw: examplepassword
 
 [Task Parameters]
 code_version: 1.0

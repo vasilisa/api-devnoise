@@ -1,0 +1,839 @@
+2020-04-14 12:28:00,187  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 12:28:00,188  * Restarting with stat
+2020-04-14 12:28:00,770  * Debugger is active!
+2020-04-14 12:28:00,786  * Debugger PIN: 712-237-311
+2020-04-14 12:29:11,537  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 12:29:11,538  * Restarting with stat
+2020-04-14 12:29:12,187  * Debugger is active!
+2020-04-14 12:29:12,216  * Debugger PIN: 712-237-311
+2020-04-14 12:36:47,326  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 12:36:47,327  * Restarting with stat
+2020-04-14 12:36:47,890  * Debugger is active!
+2020-04-14 12:36:47,908  * Debugger PIN: 712-237-311
+2020-04-14 12:37:01,174 {'new_participant_id': '1'}
+2020-04-14 12:37:01,183 127.0.0.1 - - [14/Apr/2020 12:37:01] "[37mGET /participants_question_data/last_participant_id HTTP/1.1[0m" 200 -
+2020-04-14 12:37:17,085 127.0.0.1 - - [14/Apr/2020 12:37:17] "[37mOPTIONS /participants_question_data/create/1/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:37:17,110 127.0.0.1 - - [14/Apr/2020 12:37:17] "[37mPOST /participants_question_data/create/1/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:38:40,392  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/app.py', reloading
+2020-04-14 12:38:40,577  * Restarting with stat
+2020-04-14 12:38:41,845  * Debugger is active!
+2020-04-14 12:38:41,881  * Debugger PIN: 712-237-311
+2020-04-14 12:38:51,551  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 12:38:51,552  * Restarting with stat
+2020-04-14 12:38:52,128  * Debugger is active!
+2020-04-14 12:38:52,159  * Debugger PIN: 712-237-311
+2020-04-14 12:38:59,140 {'new_participant_id': '2'}
+2020-04-14 12:38:59,142 127.0.0.1 - - [14/Apr/2020 12:38:59] "[37mGET /participants_question_data/last_participant_id HTTP/1.1[0m" 200 -
+2020-04-14 12:39:14,680 127.0.0.1 - - [14/Apr/2020 12:39:14] "[37mOPTIONS /participants_question_data/create/2/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:39:14,701 127.0.0.1 - - [14/Apr/2020 12:39:14] "[37mPOST /participants_question_data/create/2/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:39:23,153 127.0.0.1 - - [14/Apr/2020 12:39:23] "[1m[35mGET /exp?prolific_id=undefined&participant_id=2&study_id=undefined&longit_id=1 HTTP/1.1[0m" 500 -
+2020-04-14 12:39:23,226 127.0.0.1 - - [14/Apr/2020 12:39:23] "[37mGET /exp?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+2020-04-14 12:39:23,234 127.0.0.1 - - [14/Apr/2020 12:39:23] "[37mGET /exp?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+2020-04-14 12:39:23,241 127.0.0.1 - - [14/Apr/2020 12:39:23] "[37mGET /exp?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+2020-04-14 12:39:23,405 127.0.0.1 - - [14/Apr/2020 12:39:23] "[37mGET /exp?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2020-04-14 12:39:23,424 127.0.0.1 - - [14/Apr/2020 12:39:23] "[37mGET /exp?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+2020-04-14 12:39:57,781  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:39:57,919  * Restarting with stat
+2020-04-14 12:39:59,145  * Debugger is active!
+2020-04-14 12:39:59,185  * Debugger PIN: 712-237-311
+2020-04-14 12:40:01,718  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 12:40:01,718  * Restarting with stat
+2020-04-14 12:40:02,252  * Debugger is active!
+2020-04-14 12:40:02,264  * Debugger PIN: 712-237-311
+2020-04-14 12:40:13,015 127.0.0.1 - - [14/Apr/2020 12:40:13] "[1m[35mGET /exp?prolific_id=undefined&participant_id=2&study_id=undefined&longit_id=1 HTTP/1.1[0m" 500 -
+2020-04-14 12:40:13,091 127.0.0.1 - - [14/Apr/2020 12:40:13] "[37mGET /exp?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+2020-04-14 12:40:13,104 127.0.0.1 - - [14/Apr/2020 12:40:13] "[37mGET /exp?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+2020-04-14 12:40:13,112 127.0.0.1 - - [14/Apr/2020 12:40:13] "[37mGET /exp?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+2020-04-14 12:40:13,203 127.0.0.1 - - [14/Apr/2020 12:40:13] "[37mGET /exp?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+2020-04-14 12:40:13,218 127.0.0.1 - - [14/Apr/2020 12:40:13] "[37mGET /exp?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2020-04-14 12:40:30,123 {'new_participant_id': '3'}
+2020-04-14 12:40:30,125 127.0.0.1 - - [14/Apr/2020 12:40:30] "[37mGET /participants_question_data/last_participant_id HTTP/1.1[0m" 200 -
+2020-04-14 12:40:39,309 127.0.0.1 - - [14/Apr/2020 12:40:39] "[37mOPTIONS /participants_question_data/create/3/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:40:39,327 127.0.0.1 - - [14/Apr/2020 12:40:39] "[37mPOST /participants_question_data/create/3/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:40:43,831 127.0.0.1 - - [14/Apr/2020 12:40:43] "[1m[35mGET /exp?prolific_id=undefined&participant_id=3&study_id=undefined&longit_id=1 HTTP/1.1[0m" 500 -
+2020-04-14 12:40:43,909 127.0.0.1 - - [14/Apr/2020 12:40:43] "[37mGET /exp?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+2020-04-14 12:40:43,909 127.0.0.1 - - [14/Apr/2020 12:40:43] "[37mGET /exp?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+2020-04-14 12:40:43,910 127.0.0.1 - - [14/Apr/2020 12:40:43] "[37mGET /exp?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+2020-04-14 12:40:43,992 127.0.0.1 - - [14/Apr/2020 12:40:43] "[37mGET /exp?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+2020-04-14 12:40:44,058 127.0.0.1 - - [14/Apr/2020 12:40:44] "[37mGET /exp?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2020-04-14 12:44:01,004  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:44:01,102  * Restarting with stat
+2020-04-14 12:44:02,228  * Debugger is active!
+2020-04-14 12:44:02,258  * Debugger PIN: 712-237-311
+2020-04-14 12:44:04,242  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 12:44:04,243  * Restarting with stat
+2020-04-14 12:44:04,823  * Debugger is active!
+2020-04-14 12:44:04,834  * Debugger PIN: 712-237-311
+2020-04-14 12:44:10,863 {'new_participant_id': '4'}
+2020-04-14 12:44:10,865 127.0.0.1 - - [14/Apr/2020 12:44:10] "[37mGET /participants_question_data/last_participant_id HTTP/1.1[0m" 200 -
+2020-04-14 12:44:19,822 127.0.0.1 - - [14/Apr/2020 12:44:19] "[37mOPTIONS /participants_question_data/create/4/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:44:19,839 127.0.0.1 - - [14/Apr/2020 12:44:19] "[37mPOST /participants_question_data/create/4/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:44:24,810 127.0.0.1 - - [14/Apr/2020 12:44:24] "[1m[35mGET /exp?prolific_id=undefined&participant_id=4&study_id=undefined&longit_id=1 HTTP/1.1[0m" 500 -
+2020-04-14 12:44:24,895 127.0.0.1 - - [14/Apr/2020 12:44:24] "[37mGET /exp?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+2020-04-14 12:44:24,898 127.0.0.1 - - [14/Apr/2020 12:44:24] "[37mGET /exp?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+2020-04-14 12:44:24,907 127.0.0.1 - - [14/Apr/2020 12:44:24] "[37mGET /exp?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+2020-04-14 12:44:25,015 127.0.0.1 - - [14/Apr/2020 12:44:25] "[37mGET /exp?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+2020-04-14 12:44:25,049 127.0.0.1 - - [14/Apr/2020 12:44:25] "[37mGET /exp?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2020-04-14 12:44:49,886  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:44:49,988  * Restarting with stat
+2020-04-14 12:44:50,701  * Debugger is active!
+2020-04-14 12:44:50,724  * Debugger PIN: 712-237-311
+2020-04-14 12:44:55,888  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:44:55,995  * Restarting with stat
+2020-04-14 12:44:56,616  * Debugger is active!
+2020-04-14 12:44:56,656  * Debugger PIN: 712-237-311
+2020-04-14 12:47:13,852  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:47:13,978  * Restarting with stat
+2020-04-14 12:47:15,243  * Debugger is active!
+2020-04-14 12:47:15,314  * Debugger PIN: 712-237-311
+2020-04-14 12:47:38,918  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:47:39,048  * Restarting with stat
+2020-04-14 12:47:40,313  * Debugger is active!
+2020-04-14 12:47:40,367  * Debugger PIN: 712-237-311
+2020-04-14 12:47:59,869  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:48:00,013  * Restarting with stat
+2020-04-14 12:48:01,009  * Debugger is active!
+2020-04-14 12:48:01,045  * Debugger PIN: 712-237-311
+2020-04-14 12:48:03,970  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 12:48:03,970  * Restarting with stat
+2020-04-14 12:48:04,577  * Debugger is active!
+2020-04-14 12:48:04,612  * Debugger PIN: 712-237-311
+2020-04-14 12:48:08,773 {'new_participant_id': '5'}
+2020-04-14 12:48:08,775 127.0.0.1 - - [14/Apr/2020 12:48:08] "[37mGET /participants_question_data/last_participant_id HTTP/1.1[0m" 200 -
+2020-04-14 12:48:19,858 127.0.0.1 - - [14/Apr/2020 12:48:19] "[37mOPTIONS /participants_question_data/create/5/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:48:19,877 127.0.0.1 - - [14/Apr/2020 12:48:19] "[37mPOST /participants_question_data/create/5/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:48:25,380 127.0.0.1 - - [14/Apr/2020 12:48:25] "[1m[35mGET /exp?prolific_id=undefined&participant_id=5&study_id=undefined&longit_id=1 HTTP/1.1[0m" 500 -
+2020-04-14 12:48:25,458 127.0.0.1 - - [14/Apr/2020 12:48:25] "[37mGET /exp?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+2020-04-14 12:48:25,460 127.0.0.1 - - [14/Apr/2020 12:48:25] "[37mGET /exp?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+2020-04-14 12:48:25,461 127.0.0.1 - - [14/Apr/2020 12:48:25] "[37mGET /exp?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+2020-04-14 12:48:25,553 127.0.0.1 - - [14/Apr/2020 12:48:25] "[37mGET /exp?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+2020-04-14 12:48:25,637 127.0.0.1 - - [14/Apr/2020 12:48:25] "[37mGET /exp?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2020-04-14 12:48:52,703  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:48:52,810  * Restarting with stat
+2020-04-14 12:48:53,691  * Debugger is active!
+2020-04-14 12:48:53,721  * Debugger PIN: 712-237-311
+2020-04-14 12:49:14,244  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/models/base_object.py', reloading
+2020-04-14 12:49:14,386  * Restarting with stat
+2020-04-14 12:49:15,259  * Debugger is active!
+2020-04-14 12:49:15,281  * Debugger PIN: 712-237-311
+2020-04-14 12:49:54,242  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/models/base_object.py', reloading
+2020-04-14 12:49:54,366  * Restarting with stat
+2020-04-14 12:49:55,146  * Debugger is active!
+2020-04-14 12:49:55,170  * Debugger PIN: 712-237-311
+2020-04-14 12:50:26,948  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/models/task.py', reloading
+2020-04-14 12:50:27,077  * Restarting with stat
+2020-04-14 12:50:27,809  * Debugger is active!
+2020-04-14 12:50:27,826  * Debugger PIN: 712-237-311
+2020-04-14 12:50:33,711 {'new_participant_id': '6'}
+2020-04-14 12:50:33,713 127.0.0.1 - - [14/Apr/2020 12:50:33] "[37mGET /participants_question_data/last_participant_id HTTP/1.1[0m" 200 -
+2020-04-14 12:50:42,604 127.0.0.1 - - [14/Apr/2020 12:50:42] "[37mOPTIONS /participants_question_data/create/6/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:50:42,626 127.0.0.1 - - [14/Apr/2020 12:50:42] "[37mPOST /participants_question_data/create/6/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:50:46,878 127.0.0.1 - - [14/Apr/2020 12:50:46] "[1m[31mGET /exp?prolific_id=undefined&participant_id=6&study_id=undefined&longit_id=1 HTTP/1.1[0m" 400 -
+2020-04-14 12:50:46,996 127.0.0.1 - - [14/Apr/2020 12:50:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-14 12:53:36,229  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/models/task.py', reloading
+2020-04-14 12:53:36,318  * Restarting with stat
+2020-04-14 12:53:37,319  * Debugger is active!
+2020-04-14 12:53:37,360  * Debugger PIN: 712-237-311
+2020-04-14 12:53:45,571  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/models/task.py', reloading
+2020-04-14 12:53:45,659  * Restarting with stat
+2020-04-14 12:53:46,318  * Debugger is active!
+2020-04-14 12:53:46,339  * Debugger PIN: 712-237-311
+2020-04-14 12:55:00,139  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:55:00,285  * Restarting with stat
+2020-04-14 12:55:01,276  * Debugger is active!
+2020-04-14 12:55:01,319  * Debugger PIN: 712-237-311
+2020-04-14 12:55:12,607  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:55:12,706  * Restarting with stat
+2020-04-14 12:55:13,365  * Debugger is active!
+2020-04-14 12:55:13,380  * Debugger PIN: 712-237-311
+2020-04-14 12:55:41,044  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:55:41,158  * Restarting with stat
+2020-04-14 12:55:41,859  * Debugger is active!
+2020-04-14 12:55:41,880  * Debugger PIN: 712-237-311
+2020-04-14 12:55:55,241  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:55:55,365  * Restarting with stat
+2020-04-14 12:55:56,070  * Debugger is active!
+2020-04-14 12:55:56,102  * Debugger PIN: 712-237-311
+2020-04-14 12:56:13,529  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:56:13,666  * Restarting with stat
+2020-04-14 12:56:14,597  * Debugger is active!
+2020-04-14 12:56:14,630  * Debugger PIN: 712-237-311
+2020-04-14 12:56:18,795  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:56:18,894  * Restarting with stat
+2020-04-14 12:56:19,891  * Debugger is active!
+2020-04-14 12:56:19,926  * Debugger PIN: 712-237-311
+2020-04-14 12:56:23,535 {'new_participant_id': '7'}
+2020-04-14 12:56:23,537 127.0.0.1 - - [14/Apr/2020 12:56:23] "[37mGET /participants_question_data/last_participant_id HTTP/1.1[0m" 200 -
+2020-04-14 12:56:33,664 127.0.0.1 - - [14/Apr/2020 12:56:33] "[37mOPTIONS /participants_question_data/create/7/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:56:33,691 127.0.0.1 - - [14/Apr/2020 12:56:33] "[37mPOST /participants_question_data/create/7/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:56:38,935 127.0.0.1 - - [14/Apr/2020 12:56:38] "[1m[31mGET /exp?prolific_id=undefined&participant_id=7&study_id=undefined&longit_id=1 HTTP/1.1[0m" 400 -
+2020-04-14 12:56:58,929  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:56:59,014  * Restarting with stat
+2020-04-14 12:56:59,780  * Debugger is active!
+2020-04-14 12:56:59,984  * Debugger PIN: 712-237-311
+2020-04-14 12:57:04,537 {'new_participant_id': '8'}
+2020-04-14 12:57:04,540 127.0.0.1 - - [14/Apr/2020 12:57:04] "[37mGET /participants_question_data/last_participant_id HTTP/1.1[0m" 200 -
+2020-04-14 12:57:13,767 127.0.0.1 - - [14/Apr/2020 12:57:13] "[37mOPTIONS /participants_question_data/create/8/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:57:13,782 127.0.0.1 - - [14/Apr/2020 12:57:13] "[37mPOST /participants_question_data/create/8/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:57:18,598 127.0.0.1 - - [14/Apr/2020 12:57:18] "[1m[31mGET /exp?prolific_id=undefined&participant_id=8&study_id=undefined&longit_id=1 HTTP/1.1[0m" 400 -
+2020-04-14 12:57:48,141  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:57:48,221  * Restarting with stat
+2020-04-14 12:57:48,887  * Debugger is active!
+2020-04-14 12:57:48,925  * Debugger PIN: 712-237-311
+2020-04-14 12:59:08,074  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:59:08,294  * Restarting with stat
+2020-04-14 12:59:09,246  * Debugger is active!
+2020-04-14 12:59:09,273  * Debugger PIN: 712-237-311
+2020-04-14 12:59:31,833  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 12:59:31,934  * Restarting with stat
+2020-04-14 12:59:33,618  * Debugger is active!
+2020-04-14 12:59:33,656  * Debugger PIN: 712-237-311
+2020-04-14 12:59:36,484 {'new_participant_id': '9'}
+2020-04-14 12:59:36,488 127.0.0.1 - - [14/Apr/2020 12:59:36] "[37mGET /participants_question_data/last_participant_id HTTP/1.1[0m" 200 -
+2020-04-14 12:59:44,940 127.0.0.1 - - [14/Apr/2020 12:59:44] "[37mOPTIONS /participants_question_data/create/9/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:59:44,966 127.0.0.1 - - [14/Apr/2020 12:59:44] "[37mPOST /participants_question_data/create/9/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 12:59:49,216 127.0.0.1 - - [14/Apr/2020 12:59:49] "[37mGET /exp?prolific_id=undefined&participant_id=9&study_id=undefined&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-14 12:59:49,344 127.0.0.1 - - [14/Apr/2020 12:59:49] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 12:59:49,366 127.0.0.1 - - [14/Apr/2020 12:59:49] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 12:59:49,384 127.0.0.1 - - [14/Apr/2020 12:59:49] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 12:59:49,398 127.0.0.1 - - [14/Apr/2020 12:59:49] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 12:59:49,410 127.0.0.1 - - [14/Apr/2020 12:59:49] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 12:59:49,423 127.0.0.1 - - [14/Apr/2020 12:59:49] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 12:59:49,437 127.0.0.1 - - [14/Apr/2020 12:59:49] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:01:33,627  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 13:01:33,735  * Restarting with stat
+2020-04-14 13:01:34,667  * Debugger is active!
+2020-04-14 13:01:34,706  * Debugger PIN: 712-237-311
+2020-04-14 13:03:33,997 127.0.0.1 - - [14/Apr/2020 13:03:33] "[37mGET /exp?prolific_id=undefined&participant_id=9&study_id=undefined&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-14 13:03:34,179 127.0.0.1 - - [14/Apr/2020 13:03:34] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:03:34,195 127.0.0.1 - - [14/Apr/2020 13:03:34] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:03:34,210 127.0.0.1 - - [14/Apr/2020 13:03:34] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:03:34,224 127.0.0.1 - - [14/Apr/2020 13:03:34] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:03:34,236 127.0.0.1 - - [14/Apr/2020 13:03:34] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:03:34,256 127.0.0.1 - - [14/Apr/2020 13:03:34] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:03:34,271 127.0.0.1 - - [14/Apr/2020 13:03:34] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:42,702  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 13:05:42,703  * Restarting with stat
+2020-04-14 13:05:43,289  * Debugger is active!
+2020-04-14 13:05:43,302  * Debugger PIN: 712-237-311
+2020-04-14 13:05:49,742 127.0.0.1 - - [14/Apr/2020 13:05:49] "[37mGET /exp?prolific_id=undefined&participant_id=9&study_id=undefined&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-14 13:05:49,904 127.0.0.1 - - [14/Apr/2020 13:05:49] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:49,925 127.0.0.1 - - [14/Apr/2020 13:05:49] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:49,939 127.0.0.1 - - [14/Apr/2020 13:05:49] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:49,959 127.0.0.1 - - [14/Apr/2020 13:05:49] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:49,970 127.0.0.1 - - [14/Apr/2020 13:05:49] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:49,982 127.0.0.1 - - [14/Apr/2020 13:05:49] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:49,996 127.0.0.1 - - [14/Apr/2020 13:05:49] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:50,013 127.0.0.1 - - [14/Apr/2020 13:05:50] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+2020-04-14 13:05:52,495 127.0.0.1 - - [14/Apr/2020 13:05:52] "[37mGET /exp?prolific_id=undefined&participant_id=9&study_id=undefined&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-14 13:05:52,634 127.0.0.1 - - [14/Apr/2020 13:05:52] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:52,653 127.0.0.1 - - [14/Apr/2020 13:05:52] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:52,667 127.0.0.1 - - [14/Apr/2020 13:05:52] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:52,697 127.0.0.1 - - [14/Apr/2020 13:05:52] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:52,711 127.0.0.1 - - [14/Apr/2020 13:05:52] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:52,723 127.0.0.1 - - [14/Apr/2020 13:05:52] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:05:52,735 127.0.0.1 - - [14/Apr/2020 13:05:52] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:14:23,528 127.0.0.1 - - [14/Apr/2020 13:14:23] "[33mGET /pq_instruct_qz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:23:08,685  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 13:23:08,686  * Restarting with stat
+2020-04-14 13:23:09,294  * Debugger is active!
+2020-04-14 13:23:09,317  * Debugger PIN: 712-237-311
+2020-04-14 13:24:00,292 127.0.0.1 - - [14/Apr/2020 13:24:00] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:24:00,517 127.0.0.1 - - [14/Apr/2020 13:24:00] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:00,527 127.0.0.1 - - [14/Apr/2020 13:24:00] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:00,535 127.0.0.1 - - [14/Apr/2020 13:24:00] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:00,543 127.0.0.1 - - [14/Apr/2020 13:24:00] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:00,551 127.0.0.1 - - [14/Apr/2020 13:24:00] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:00,558 127.0.0.1 - - [14/Apr/2020 13:24:00] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:00,566 127.0.0.1 - - [14/Apr/2020 13:24:00] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:41,571 127.0.0.1 - - [14/Apr/2020 13:24:41] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:24:41,613 127.0.0.1 - - [14/Apr/2020 13:24:41] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:41,623 127.0.0.1 - - [14/Apr/2020 13:24:41] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:41,630 127.0.0.1 - - [14/Apr/2020 13:24:41] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:41,637 127.0.0.1 - - [14/Apr/2020 13:24:41] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:41,645 127.0.0.1 - - [14/Apr/2020 13:24:41] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:41,652 127.0.0.1 - - [14/Apr/2020 13:24:41] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:24:41,659 127.0.0.1 - - [14/Apr/2020 13:24:41] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:25:00,423 127.0.0.1 - - [14/Apr/2020 13:25:00] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:25:00,510 127.0.0.1 - - [14/Apr/2020 13:25:00] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:25:00,525 127.0.0.1 - - [14/Apr/2020 13:25:00] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:25:00,544 127.0.0.1 - - [14/Apr/2020 13:25:00] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:25:00,554 127.0.0.1 - - [14/Apr/2020 13:25:00] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:25:00,568 127.0.0.1 - - [14/Apr/2020 13:25:00] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:25:00,583 127.0.0.1 - - [14/Apr/2020 13:25:00] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:25:00,595 127.0.0.1 - - [14/Apr/2020 13:25:00] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:36:25,481 127.0.0.1 - - [14/Apr/2020 13:36:25] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:36:25,581 127.0.0.1 - - [14/Apr/2020 13:36:25] "[33mGET /ps_instruct_quiz.html?_=1586867785557 HTTP/1.1[0m" 404 -
+2020-04-14 13:36:25,610 127.0.0.1 - - [14/Apr/2020 13:36:25] "[33mGET /test.html?_=1586867785599 HTTP/1.1[0m" 404 -
+2020-04-14 13:36:25,621 127.0.0.1 - - [14/Apr/2020 13:36:25] "[33mGET /payment.html?_=1586867785615 HTTP/1.1[0m" 404 -
+2020-04-14 13:36:25,633 127.0.0.1 - - [14/Apr/2020 13:36:25] "[33mGET /ps_instruct_demoq.html?_=1586867785626 HTTP/1.1[0m" 404 -
+2020-04-14 13:36:25,645 127.0.0.1 - - [14/Apr/2020 13:36:25] "[33mGET /ps_instruct_1.html?_=1586867785639 HTTP/1.1[0m" 404 -
+2020-04-14 13:36:25,655 127.0.0.1 - - [14/Apr/2020 13:36:25] "[33mGET /ps_instruct_2.html?_=1586867785649 HTTP/1.1[0m" 404 -
+2020-04-14 13:36:25,668 127.0.0.1 - - [14/Apr/2020 13:36:25] "[33mGET /ps_instruct_3.html?_=1586867785660 HTTP/1.1[0m" 404 -
+2020-04-14 13:36:47,432 127.0.0.1 - - [14/Apr/2020 13:36:47] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:37:36,542 127.0.0.1 - - [14/Apr/2020 13:37:36] "[33mGET /ps_instruct_quiz.html?_=1586867856531 HTTP/1.1[0m" 404 -
+2020-04-14 13:37:36,584 127.0.0.1 - - [14/Apr/2020 13:37:36] "[33mGET /test.html?_=1586867856557 HTTP/1.1[0m" 404 -
+2020-04-14 13:37:36,609 127.0.0.1 - - [14/Apr/2020 13:37:36] "[33mGET /payment.html?_=1586867856599 HTTP/1.1[0m" 404 -
+2020-04-14 13:37:36,621 127.0.0.1 - - [14/Apr/2020 13:37:36] "[33mGET /ps_instruct_demoq.html?_=1586867856614 HTTP/1.1[0m" 404 -
+2020-04-14 13:37:36,639 127.0.0.1 - - [14/Apr/2020 13:37:36] "[33mGET /ps_instruct_1.html?_=1586867856628 HTTP/1.1[0m" 404 -
+2020-04-14 13:37:36,657 127.0.0.1 - - [14/Apr/2020 13:37:36] "[33mGET /ps_instruct_2.html?_=1586867856647 HTTP/1.1[0m" 404 -
+2020-04-14 13:37:36,667 127.0.0.1 - - [14/Apr/2020 13:37:36] "[33mGET /ps_instruct_3.html?_=1586867856661 HTTP/1.1[0m" 404 -
+2020-04-14 13:39:33,854 127.0.0.1 - - [14/Apr/2020 13:39:33] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:39:38,200 127.0.0.1 - - [14/Apr/2020 13:39:38] "[33mGET /ps_instruct_quiz.html?_=1586867978187 HTTP/1.1[0m" 404 -
+2020-04-14 13:39:38,238 127.0.0.1 - - [14/Apr/2020 13:39:38] "[33mGET /test.html?_=1586867978218 HTTP/1.1[0m" 404 -
+2020-04-14 13:39:38,255 127.0.0.1 - - [14/Apr/2020 13:39:38] "[33mGET /payment.html?_=1586867978246 HTTP/1.1[0m" 404 -
+2020-04-14 13:39:38,275 127.0.0.1 - - [14/Apr/2020 13:39:38] "[33mGET /ps_instruct_demoq.html?_=1586867978265 HTTP/1.1[0m" 404 -
+2020-04-14 13:39:38,290 127.0.0.1 - - [14/Apr/2020 13:39:38] "[33mGET /ps_instruct_1.html?_=1586867978283 HTTP/1.1[0m" 404 -
+2020-04-14 13:39:38,300 127.0.0.1 - - [14/Apr/2020 13:39:38] "[33mGET /ps_instruct_2.html?_=1586867978294 HTTP/1.1[0m" 404 -
+2020-04-14 13:39:38,317 127.0.0.1 - - [14/Apr/2020 13:39:38] "[33mGET /ps_instruct_3.html?_=1586867978304 HTTP/1.1[0m" 404 -
+2020-04-14 13:40:49,767 127.0.0.1 - - [14/Apr/2020 13:40:49] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:40:58,921 127.0.0.1 - - [14/Apr/2020 13:40:58] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:40:58,973 127.0.0.1 - - [14/Apr/2020 13:40:58] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:40:59,039 127.0.0.1 - - [14/Apr/2020 13:40:59] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:40:59,074 127.0.0.1 - - [14/Apr/2020 13:40:59] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:40:59,086 127.0.0.1 - - [14/Apr/2020 13:40:59] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:40:59,098 127.0.0.1 - - [14/Apr/2020 13:40:59] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:40:59,108 127.0.0.1 - - [14/Apr/2020 13:40:59] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:40:59,119 127.0.0.1 - - [14/Apr/2020 13:40:59] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:40:59,133 127.0.0.1 - - [14/Apr/2020 13:40:59] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:40:59,146 127.0.0.1 - - [14/Apr/2020 13:40:59] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:13,471 127.0.0.1 - - [14/Apr/2020 13:42:13] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:42:13,606 127.0.0.1 - - [14/Apr/2020 13:42:13] "[33mGET /templates/payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:13,640 127.0.0.1 - - [14/Apr/2020 13:42:13] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:13,659 127.0.0.1 - - [14/Apr/2020 13:42:13] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:13,671 127.0.0.1 - - [14/Apr/2020 13:42:13] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:13,684 127.0.0.1 - - [14/Apr/2020 13:42:13] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:13,697 127.0.0.1 - - [14/Apr/2020 13:42:13] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:13,714 127.0.0.1 - - [14/Apr/2020 13:42:13] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:13,725 127.0.0.1 - - [14/Apr/2020 13:42:13] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:41,558 127.0.0.1 - - [14/Apr/2020 13:42:41] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:42:41,649 127.0.0.1 - - [14/Apr/2020 13:42:41] "[33mGET /templates/payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:41,676 127.0.0.1 - - [14/Apr/2020 13:42:41] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:41,690 127.0.0.1 - - [14/Apr/2020 13:42:41] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:41,704 127.0.0.1 - - [14/Apr/2020 13:42:41] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:41,718 127.0.0.1 - - [14/Apr/2020 13:42:41] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:41,730 127.0.0.1 - - [14/Apr/2020 13:42:41] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:41,747 127.0.0.1 - - [14/Apr/2020 13:42:41] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:42:41,768 127.0.0.1 - - [14/Apr/2020 13:42:41] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:11,970 127.0.0.1 - - [14/Apr/2020 13:44:11] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:44:12,077 127.0.0.1 - - [14/Apr/2020 13:44:12] "[33mGET /Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/templates/payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:12,144 127.0.0.1 - - [14/Apr/2020 13:44:12] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:12,161 127.0.0.1 - - [14/Apr/2020 13:44:12] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:12,178 127.0.0.1 - - [14/Apr/2020 13:44:12] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:12,189 127.0.0.1 - - [14/Apr/2020 13:44:12] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:12,203 127.0.0.1 - - [14/Apr/2020 13:44:12] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:12,217 127.0.0.1 - - [14/Apr/2020 13:44:12] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:12,231 127.0.0.1 - - [14/Apr/2020 13:44:12] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:30,035 127.0.0.1 - - [14/Apr/2020 13:44:30] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:44:30,116 127.0.0.1 - - [14/Apr/2020 13:44:30] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:30,125 127.0.0.1 - - [14/Apr/2020 13:44:30] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:30,135 127.0.0.1 - - [14/Apr/2020 13:44:30] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:30,149 127.0.0.1 - - [14/Apr/2020 13:44:30] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:30,160 127.0.0.1 - - [14/Apr/2020 13:44:30] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:30,173 127.0.0.1 - - [14/Apr/2020 13:44:30] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:30,184 127.0.0.1 - - [14/Apr/2020 13:44:30] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:30,197 127.0.0.1 - - [14/Apr/2020 13:44:30] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:35,301 127.0.0.1 - - [14/Apr/2020 13:44:35] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:44:35,421 127.0.0.1 - - [14/Apr/2020 13:44:35] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:35,454 127.0.0.1 - - [14/Apr/2020 13:44:35] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:35,483 127.0.0.1 - - [14/Apr/2020 13:44:35] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:35,496 127.0.0.1 - - [14/Apr/2020 13:44:35] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:35,510 127.0.0.1 - - [14/Apr/2020 13:44:35] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:35,524 127.0.0.1 - - [14/Apr/2020 13:44:35] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:35,538 127.0.0.1 - - [14/Apr/2020 13:44:35] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:44:35,547 127.0.0.1 - - [14/Apr/2020 13:44:35] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:49:06,900 127.0.0.1 - - [14/Apr/2020 13:49:06] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:49:07,011 127.0.0.1 - - [14/Apr/2020 13:49:07] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:49:07,027 127.0.0.1 - - [14/Apr/2020 13:49:07] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:49:07,038 127.0.0.1 - - [14/Apr/2020 13:49:07] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:49:07,052 127.0.0.1 - - [14/Apr/2020 13:49:07] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:49:07,067 127.0.0.1 - - [14/Apr/2020 13:49:07] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:49:07,079 127.0.0.1 - - [14/Apr/2020 13:49:07] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:49:07,094 127.0.0.1 - - [14/Apr/2020 13:49:07] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:26,402 127.0.0.1 - - [14/Apr/2020 13:52:26] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:52:26,510 127.0.0.1 - - [14/Apr/2020 13:52:26] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:26,541 127.0.0.1 - - [14/Apr/2020 13:52:26] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:26,558 127.0.0.1 - - [14/Apr/2020 13:52:26] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:26,572 127.0.0.1 - - [14/Apr/2020 13:52:26] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:26,584 127.0.0.1 - - [14/Apr/2020 13:52:26] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:26,596 127.0.0.1 - - [14/Apr/2020 13:52:26] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:26,605 127.0.0.1 - - [14/Apr/2020 13:52:26] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:30,425 127.0.0.1 - - [14/Apr/2020 13:52:30] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:52:30,528 127.0.0.1 - - [14/Apr/2020 13:52:30] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:30,553 127.0.0.1 - - [14/Apr/2020 13:52:30] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:30,576 127.0.0.1 - - [14/Apr/2020 13:52:30] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:30,601 127.0.0.1 - - [14/Apr/2020 13:52:30] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:30,631 127.0.0.1 - - [14/Apr/2020 13:52:30] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:30,656 127.0.0.1 - - [14/Apr/2020 13:52:30] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:30,667 127.0.0.1 - - [14/Apr/2020 13:52:30] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:36,052 127.0.0.1 - - [14/Apr/2020 13:52:36] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:52:36,151 127.0.0.1 - - [14/Apr/2020 13:52:36] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:36,198 127.0.0.1 - - [14/Apr/2020 13:52:36] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:36,213 127.0.0.1 - - [14/Apr/2020 13:52:36] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:36,234 127.0.0.1 - - [14/Apr/2020 13:52:36] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:36,260 127.0.0.1 - - [14/Apr/2020 13:52:36] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:36,284 127.0.0.1 - - [14/Apr/2020 13:52:36] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:52:36,300 127.0.0.1 - - [14/Apr/2020 13:52:36] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:53:33,372 127.0.0.1 - - [14/Apr/2020 13:53:33] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:55:16,809 127.0.0.1 - - [14/Apr/2020 13:55:16] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:55:16,890 127.0.0.1 - - [14/Apr/2020 13:55:16] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:55:16,901 127.0.0.1 - - [14/Apr/2020 13:55:16] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:55:16,917 127.0.0.1 - - [14/Apr/2020 13:55:16] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:55:16,937 127.0.0.1 - - [14/Apr/2020 13:55:16] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:55:16,947 127.0.0.1 - - [14/Apr/2020 13:55:16] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:55:16,959 127.0.0.1 - - [14/Apr/2020 13:55:16] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:55:16,968 127.0.0.1 - - [14/Apr/2020 13:55:16] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 13:59:11,760 127.0.0.1 - - [14/Apr/2020 13:59:11] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 13:59:11,905 127.0.0.1 - - [14/Apr/2020 13:59:11] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 13:59:11,916 127.0.0.1 - - [14/Apr/2020 13:59:11] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 13:59:11,932 127.0.0.1 - - [14/Apr/2020 13:59:11] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 13:59:11,975 127.0.0.1 - - [14/Apr/2020 13:59:11] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 13:59:12,000 127.0.0.1 - - [14/Apr/2020 13:59:12] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 13:59:12,014 127.0.0.1 - - [14/Apr/2020 13:59:12] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 13:59:12,030 127.0.0.1 - - [14/Apr/2020 13:59:12] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:01:39,069 127.0.0.1 - - [14/Apr/2020 14:01:39] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:01:39,185 127.0.0.1 - - [14/Apr/2020 14:01:39] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:01:39,209 127.0.0.1 - - [14/Apr/2020 14:01:39] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:01:39,222 127.0.0.1 - - [14/Apr/2020 14:01:39] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:01:39,235 127.0.0.1 - - [14/Apr/2020 14:01:39] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:01:39,246 127.0.0.1 - - [14/Apr/2020 14:01:39] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:01:39,257 127.0.0.1 - - [14/Apr/2020 14:01:39] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:01:39,268 127.0.0.1 - - [14/Apr/2020 14:01:39] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:08:48,198 127.0.0.1 - - [14/Apr/2020 14:08:48] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:09:03,602 127.0.0.1 - - [14/Apr/2020 14:09:03] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:09:03,846 127.0.0.1 - - [14/Apr/2020 14:09:03] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:03,866 127.0.0.1 - - [14/Apr/2020 14:09:03] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:03,881 127.0.0.1 - - [14/Apr/2020 14:09:03] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:03,895 127.0.0.1 - - [14/Apr/2020 14:09:03] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:03,908 127.0.0.1 - - [14/Apr/2020 14:09:03] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:03,920 127.0.0.1 - - [14/Apr/2020 14:09:03] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:03,933 127.0.0.1 - - [14/Apr/2020 14:09:03] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:37,401 127.0.0.1 - - [14/Apr/2020 14:09:37] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:09:37,571 127.0.0.1 - - [14/Apr/2020 14:09:37] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:37,603 127.0.0.1 - - [14/Apr/2020 14:09:37] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:37,634 127.0.0.1 - - [14/Apr/2020 14:09:37] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:37,648 127.0.0.1 - - [14/Apr/2020 14:09:37] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:37,661 127.0.0.1 - - [14/Apr/2020 14:09:37] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:37,670 127.0.0.1 - - [14/Apr/2020 14:09:37] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:09:37,681 127.0.0.1 - - [14/Apr/2020 14:09:37] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:10:16,640  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 14:10:16,762  * Restarting with stat
+2020-04-14 14:10:17,754  * Debugger is active!
+2020-04-14 14:10:17,770  * Debugger PIN: 712-237-311
+2020-04-14 14:10:38,316  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 14:10:38,455  * Restarting with stat
+2020-04-14 14:10:39,545  * Debugger is active!
+2020-04-14 14:10:39,579  * Debugger PIN: 712-237-311
+2020-04-14 14:10:41,545 127.0.0.1 - - [14/Apr/2020 14:10:41] "[1m[35mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 500 -
+2020-04-14 14:10:41,594 127.0.0.1 - - [14/Apr/2020 14:10:41] "[37mGET /exp?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+2020-04-14 14:10:41,595 127.0.0.1 - - [14/Apr/2020 14:10:41] "[37mGET /exp?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+2020-04-14 14:10:41,595 127.0.0.1 - - [14/Apr/2020 14:10:41] "[37mGET /exp?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+2020-04-14 14:10:41,789 127.0.0.1 - - [14/Apr/2020 14:10:41] "[37mGET /exp?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+2020-04-14 14:10:41,848 127.0.0.1 - - [14/Apr/2020 14:10:41] "[37mGET /exp?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2020-04-14 14:12:30,126  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 14:12:30,304  * Restarting with stat
+2020-04-14 14:12:31,291  * Debugger is active!
+2020-04-14 14:12:31,329  * Debugger PIN: 712-237-311
+2020-04-14 14:12:32,840 127.0.0.1 - - [14/Apr/2020 14:12:32] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:13:07,148  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 14:13:07,278  * Restarting with stat
+2020-04-14 14:13:08,212  * Debugger is active!
+2020-04-14 14:13:08,229  * Debugger PIN: 712-237-311
+2020-04-14 14:13:08,681 127.0.0.1 - - [14/Apr/2020 14:13:08] "[1m[35mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 500 -
+2020-04-14 14:13:08,763 127.0.0.1 - - [14/Apr/2020 14:13:08] "[37mGET /exp?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+2020-04-14 14:13:08,773 127.0.0.1 - - [14/Apr/2020 14:13:08] "[37mGET /exp?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+2020-04-14 14:13:08,775 127.0.0.1 - - [14/Apr/2020 14:13:08] "[37mGET /exp?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+2020-04-14 14:13:08,943 127.0.0.1 - - [14/Apr/2020 14:13:08] "[37mGET /exp?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2020-04-14 14:13:08,997 127.0.0.1 - - [14/Apr/2020 14:13:08] "[37mGET /exp?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+2020-04-14 14:13:49,186  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 14:13:49,354  * Restarting with stat
+2020-04-14 14:13:50,767  * Debugger is active!
+2020-04-14 14:13:50,801  * Debugger PIN: 712-237-311
+2020-04-14 14:13:56,054 127.0.0.1 - - [14/Apr/2020 14:13:56] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:13:56,138 127.0.0.1 - - [14/Apr/2020 14:13:56] "[37mGET /static/debrief.js HTTP/1.1[0m" 200 -
+2020-04-14 14:13:56,142 127.0.0.1 - - [14/Apr/2020 14:13:56] "[36mGET /static/questTask.css HTTP/1.1[0m" 304 -
+2020-04-14 14:13:56,221 127.0.0.1 - - [14/Apr/2020 14:13:56] "[33mGET /debriefing.html HTTP/1.1[0m" 404 -
+2020-04-14 14:21:54,835 127.0.0.1 - - [14/Apr/2020 14:21:54] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:21:54,927 127.0.0.1 - - [14/Apr/2020 14:21:54] "[33mGET /debriefing.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:13,384 127.0.0.1 - - [14/Apr/2020 14:22:13] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:22:13,481 127.0.0.1 - - [14/Apr/2020 14:22:13] "[33mGET /debriefing.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:41,584  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 14:22:41,673  * Restarting with stat
+2020-04-14 14:22:43,145  * Debugger is active!
+2020-04-14 14:22:43,174  * Debugger PIN: 712-237-311
+2020-04-14 14:22:43,440 127.0.0.1 - - [14/Apr/2020 14:22:43] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:22:50,394 127.0.0.1 - - [14/Apr/2020 14:22:50] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:50,421 127.0.0.1 - - [14/Apr/2020 14:22:50] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:50,440 127.0.0.1 - - [14/Apr/2020 14:22:50] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:50,472 127.0.0.1 - - [14/Apr/2020 14:22:50] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:50,502 127.0.0.1 - - [14/Apr/2020 14:22:50] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:50,519 127.0.0.1 - - [14/Apr/2020 14:22:50] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:50,546 127.0.0.1 - - [14/Apr/2020 14:22:50] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:53,921 127.0.0.1 - - [14/Apr/2020 14:22:53] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:22:59,884 127.0.0.1 - - [14/Apr/2020 14:22:59] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:59,913 127.0.0.1 - - [14/Apr/2020 14:22:59] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:59,931 127.0.0.1 - - [14/Apr/2020 14:22:59] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:59,959 127.0.0.1 - - [14/Apr/2020 14:22:59] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:22:59,983 127.0.0.1 - - [14/Apr/2020 14:22:59] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:23:00,008 127.0.0.1 - - [14/Apr/2020 14:23:00] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:23:00,024 127.0.0.1 - - [14/Apr/2020 14:23:00] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:23:31,288  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 14:23:31,380  * Restarting with stat
+2020-04-14 14:23:32,323  * Debugger is active!
+2020-04-14 14:23:32,339  * Debugger PIN: 712-237-311
+2020-04-14 14:23:49,117 127.0.0.1 - - [14/Apr/2020 14:23:49] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:23:49,208 127.0.0.1 - - [14/Apr/2020 14:23:49] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:23:49,221 127.0.0.1 - - [14/Apr/2020 14:23:49] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:23:49,234 127.0.0.1 - - [14/Apr/2020 14:23:49] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:23:52,897 127.0.0.1 - - [14/Apr/2020 14:23:52] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:23:52,930 127.0.0.1 - - [14/Apr/2020 14:23:52] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:23:52,947 127.0.0.1 - - [14/Apr/2020 14:23:52] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:23:52,961 127.0.0.1 - - [14/Apr/2020 14:23:52] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:25:27,965 127.0.0.1 - - [14/Apr/2020 14:25:27] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:26:01,668 127.0.0.1 - - [14/Apr/2020 14:26:01] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:26:12,486 127.0.0.1 - - [14/Apr/2020 14:26:12] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:26:12,594 127.0.0.1 - - [14/Apr/2020 14:26:12] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:26:12,640 127.0.0.1 - - [14/Apr/2020 14:26:12] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:26:12,657 127.0.0.1 - - [14/Apr/2020 14:26:12] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:26:12,676 127.0.0.1 - - [14/Apr/2020 14:26:12] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:26:12,706 127.0.0.1 - - [14/Apr/2020 14:26:12] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:26:12,730 127.0.0.1 - - [14/Apr/2020 14:26:12] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:26:12,745 127.0.0.1 - - [14/Apr/2020 14:26:12] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:01,053 127.0.0.1 - - [14/Apr/2020 14:30:01] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:30:01,219 127.0.0.1 - - [14/Apr/2020 14:30:01] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:01,235 127.0.0.1 - - [14/Apr/2020 14:30:01] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:01,250 127.0.0.1 - - [14/Apr/2020 14:30:01] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:01,266 127.0.0.1 - - [14/Apr/2020 14:30:01] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:01,279 127.0.0.1 - - [14/Apr/2020 14:30:01] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:01,300 127.0.0.1 - - [14/Apr/2020 14:30:01] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:01,313 127.0.0.1 - - [14/Apr/2020 14:30:01] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:20,051 127.0.0.1 - - [14/Apr/2020 14:30:20] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:30:20,222 127.0.0.1 - - [14/Apr/2020 14:30:20] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:20,236 127.0.0.1 - - [14/Apr/2020 14:30:20] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:20,249 127.0.0.1 - - [14/Apr/2020 14:30:20] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:20,266 127.0.0.1 - - [14/Apr/2020 14:30:20] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:20,276 127.0.0.1 - - [14/Apr/2020 14:30:20] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:20,288 127.0.0.1 - - [14/Apr/2020 14:30:20] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:20,298 127.0.0.1 - - [14/Apr/2020 14:30:20] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:23,918 127.0.0.1 - - [14/Apr/2020 14:30:23] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:30:24,014 127.0.0.1 - - [14/Apr/2020 14:30:24] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:24,031 127.0.0.1 - - [14/Apr/2020 14:30:24] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:24,046 127.0.0.1 - - [14/Apr/2020 14:30:24] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:24,059 127.0.0.1 - - [14/Apr/2020 14:30:24] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:24,072 127.0.0.1 - - [14/Apr/2020 14:30:24] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:24,084 127.0.0.1 - - [14/Apr/2020 14:30:24] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:24,095 127.0.0.1 - - [14/Apr/2020 14:30:24] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:30,916 127.0.0.1 - - [14/Apr/2020 14:30:30] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:30:31,073 127.0.0.1 - - [14/Apr/2020 14:30:31] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:31,089 127.0.0.1 - - [14/Apr/2020 14:30:31] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:31,103 127.0.0.1 - - [14/Apr/2020 14:30:31] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:31,117 127.0.0.1 - - [14/Apr/2020 14:30:31] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:31,134 127.0.0.1 - - [14/Apr/2020 14:30:31] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:31,148 127.0.0.1 - - [14/Apr/2020 14:30:31] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:31,163 127.0.0.1 - - [14/Apr/2020 14:30:31] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:32,983 127.0.0.1 - - [14/Apr/2020 14:30:32] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:30:33,089 127.0.0.1 - - [14/Apr/2020 14:30:33] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:33,109 127.0.0.1 - - [14/Apr/2020 14:30:33] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:33,119 127.0.0.1 - - [14/Apr/2020 14:30:33] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:33,133 127.0.0.1 - - [14/Apr/2020 14:30:33] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:33,149 127.0.0.1 - - [14/Apr/2020 14:30:33] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:33,164 127.0.0.1 - - [14/Apr/2020 14:30:33] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:33,181 127.0.0.1 - - [14/Apr/2020 14:30:33] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:34,572 127.0.0.1 - - [14/Apr/2020 14:30:34] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:30:34,691 127.0.0.1 - - [14/Apr/2020 14:30:34] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:34,728 127.0.0.1 - - [14/Apr/2020 14:30:34] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:34,753 127.0.0.1 - - [14/Apr/2020 14:30:34] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:34,779 127.0.0.1 - - [14/Apr/2020 14:30:34] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:34,795 127.0.0.1 - - [14/Apr/2020 14:30:34] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:34,810 127.0.0.1 - - [14/Apr/2020 14:30:34] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:30:34,821 127.0.0.1 - - [14/Apr/2020 14:30:34] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:31:33,039  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 14:31:33,200  * Restarting with stat
+2020-04-14 14:31:34,621  * Debugger is active!
+2020-04-14 14:31:34,648  * Debugger PIN: 712-237-311
+2020-04-14 14:31:36,653 127.0.0.1 - - [14/Apr/2020 14:31:36] "[1m[35mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 500 -
+2020-04-14 14:31:36,710 127.0.0.1 - - [14/Apr/2020 14:31:36] "[37mGET /exp?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+2020-04-14 14:31:36,712 127.0.0.1 - - [14/Apr/2020 14:31:36] "[37mGET /exp?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+2020-04-14 14:31:36,715 127.0.0.1 - - [14/Apr/2020 14:31:36] "[37mGET /exp?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+2020-04-14 14:31:36,889 127.0.0.1 - - [14/Apr/2020 14:31:36] "[37mGET /exp?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+2020-04-14 14:31:36,953 127.0.0.1 - - [14/Apr/2020 14:31:36] "[37mGET /exp?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2020-04-14 14:31:54,141  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 14:31:54,257  * Restarting with stat
+2020-04-14 14:31:55,696  * Debugger is active!
+2020-04-14 14:31:55,721  * Debugger PIN: 712-237-311
+2020-04-14 14:31:56,197 127.0.0.1 - - [14/Apr/2020 14:31:56] "[1m[35mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 500 -
+2020-04-14 14:31:56,272 127.0.0.1 - - [14/Apr/2020 14:31:56] "[37mGET /exp?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+2020-04-14 14:31:56,276 127.0.0.1 - - [14/Apr/2020 14:31:56] "[37mGET /exp?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+2020-04-14 14:31:56,280 127.0.0.1 - - [14/Apr/2020 14:31:56] "[37mGET /exp?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+2020-04-14 14:31:56,416 127.0.0.1 - - [14/Apr/2020 14:31:56] "[37mGET /exp?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2020-04-14 14:31:56,526 127.0.0.1 - - [14/Apr/2020 14:31:56] "[37mGET /exp?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+2020-04-14 14:32:01,911  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 14:32:02,041  * Restarting with stat
+2020-04-14 14:32:03,002  * Debugger is active!
+2020-04-14 14:32:03,017  * Debugger PIN: 712-237-311
+2020-04-14 14:32:03,916 127.0.0.1 - - [14/Apr/2020 14:32:03] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:32:04,103 127.0.0.1 - - [14/Apr/2020 14:32:04] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:32:04,122 127.0.0.1 - - [14/Apr/2020 14:32:04] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:32:04,140 127.0.0.1 - - [14/Apr/2020 14:32:04] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:32:04,155 127.0.0.1 - - [14/Apr/2020 14:32:04] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:32:04,170 127.0.0.1 - - [14/Apr/2020 14:32:04] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:32:04,186 127.0.0.1 - - [14/Apr/2020 14:32:04] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:32:04,197 127.0.0.1 - - [14/Apr/2020 14:32:04] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:32:23,541  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 14:32:23,640  * Restarting with stat
+2020-04-14 14:32:24,384  * Debugger is active!
+2020-04-14 14:32:24,410  * Debugger PIN: 712-237-311
+2020-04-14 14:35:41,699  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 14:35:41,701  * Restarting with stat
+2020-04-14 14:35:42,220  * Debugger is active!
+2020-04-14 14:35:42,234  * Debugger PIN: 712-237-311
+2020-04-14 14:35:48,159 127.0.0.1 - - [14/Apr/2020 14:35:48] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:35:48,231 127.0.0.1 - - [14/Apr/2020 14:35:48] "[37mGET /static/jquery-3.5.0.js HTTP/1.1[0m" 200 -
+2020-04-14 14:36:22,866 127.0.0.1 - - [14/Apr/2020 14:36:22] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:36:48,695 127.0.0.1 - - [14/Apr/2020 14:36:48] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:37:18,579 127.0.0.1 - - [14/Apr/2020 14:37:18] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:37:20,024 127.0.0.1 - - [14/Apr/2020 14:37:20] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:37:21,643 127.0.0.1 - - [14/Apr/2020 14:37:21] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:38:28,900 127.0.0.1 - - [14/Apr/2020 14:38:28] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:38:30,357 127.0.0.1 - - [14/Apr/2020 14:38:30] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:38:42,799 127.0.0.1 - - [14/Apr/2020 14:38:42] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:39:18,550 127.0.0.1 - - [14/Apr/2020 14:39:18] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:39:34,769 127.0.0.1 - - [14/Apr/2020 14:39:34] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:40:27,414 127.0.0.1 - - [14/Apr/2020 14:40:27] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:40:29,525 127.0.0.1 - - [14/Apr/2020 14:40:29] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:40:30,941 127.0.0.1 - - [14/Apr/2020 14:40:30] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:40:45,800 127.0.0.1 - - [14/Apr/2020 14:40:45] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:40:51,362 127.0.0.1 - - [14/Apr/2020 14:40:51] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:41:39,685 127.0.0.1 - - [14/Apr/2020 14:41:39] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:41:40,878 127.0.0.1 - - [14/Apr/2020 14:41:40] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:41:40,914 127.0.0.1 - - [14/Apr/2020 14:41:40] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:41:40,935 127.0.0.1 - - [14/Apr/2020 14:41:40] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:41:40,978 127.0.0.1 - - [14/Apr/2020 14:41:40] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:41:41,034 127.0.0.1 - - [14/Apr/2020 14:41:41] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:41:41,098 127.0.0.1 - - [14/Apr/2020 14:41:41] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:41:41,115 127.0.0.1 - - [14/Apr/2020 14:41:41] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:47:08,370 127.0.0.1 - - [14/Apr/2020 14:47:08] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:47:09,882 127.0.0.1 - - [14/Apr/2020 14:47:09] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:47:09,913 127.0.0.1 - - [14/Apr/2020 14:47:09] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:47:09,945 127.0.0.1 - - [14/Apr/2020 14:47:09] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:47:09,976 127.0.0.1 - - [14/Apr/2020 14:47:09] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:47:10,008 127.0.0.1 - - [14/Apr/2020 14:47:10] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:47:10,035 127.0.0.1 - - [14/Apr/2020 14:47:10] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:47:10,089 127.0.0.1 - - [14/Apr/2020 14:47:10] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:52:21,321  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 14:52:21,322  * Restarting with stat
+2020-04-14 14:52:21,851  * Debugger is active!
+2020-04-14 14:52:21,869  * Debugger PIN: 712-237-311
+2020-04-14 14:52:27,489 127.0.0.1 - - [14/Apr/2020 14:52:27] "[37mGET /exp?prolific_id=coucou&participant_id=0&study_id=kiki&longit_id=2 HTTP/1.1[0m" 200 -
+2020-04-14 14:52:29,714 127.0.0.1 - - [14/Apr/2020 14:52:29] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:52:29,739 127.0.0.1 - - [14/Apr/2020 14:52:29] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:52:29,760 127.0.0.1 - - [14/Apr/2020 14:52:29] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:52:29,781 127.0.0.1 - - [14/Apr/2020 14:52:29] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:52:29,799 127.0.0.1 - - [14/Apr/2020 14:52:29] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:52:29,824 127.0.0.1 - - [14/Apr/2020 14:52:29] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:52:29,851 127.0.0.1 - - [14/Apr/2020 14:52:29] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 14:55:16,642  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 14:55:16,643  * Restarting with stat
+2020-04-14 14:55:17,176  * Debugger is active!
+2020-04-14 14:55:17,187  * Debugger PIN: 712-237-311
+2020-04-14 14:57:59,688 127.0.0.1 - - [14/Apr/2020 14:57:59] "[37mGET /testmethod HTTP/1.1[0m" 200 -
+2020-04-14 14:58:10,577 127.0.0.1 - - [14/Apr/2020 14:58:10] "[33mGET /index.html HTTP/1.1[0m" 404 -
+2020-04-14 14:58:20,916 127.0.0.1 - - [14/Apr/2020 14:58:20] "[33mGET / HTTP/1.1[0m" 404 -
+2020-04-14 14:58:27,958 {'new_participant_id': '10'}
+2020-04-14 14:58:27,960 127.0.0.1 - - [14/Apr/2020 14:58:27] "[37mGET /participants_question_data/last_participant_id HTTP/1.1[0m" 200 -
+2020-04-14 14:58:38,638 127.0.0.1 - - [14/Apr/2020 14:58:38] "[37mOPTIONS /participants_question_data/create/10/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 14:58:38,664 127.0.0.1 - - [14/Apr/2020 14:58:38] "[37mPOST /participants_question_data/create/10/1/undefined HTTP/1.1[0m" 200 -
+2020-04-14 14:58:43,810 127.0.0.1 - - [14/Apr/2020 14:58:43] "[37mGET /exp?prolific_id=undefined&participant_id=10&study_id=undefined&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-14 14:58:47,389 127.0.0.1 - - [14/Apr/2020 14:58:47] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 14:58:47,421 127.0.0.1 - - [14/Apr/2020 14:58:47] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 14:58:47,444 127.0.0.1 - - [14/Apr/2020 14:58:47] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 14:58:47,461 127.0.0.1 - - [14/Apr/2020 14:58:47] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 14:58:47,478 127.0.0.1 - - [14/Apr/2020 14:58:47] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 14:58:47,499 127.0.0.1 - - [14/Apr/2020 14:58:47] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 14:58:47,517 127.0.0.1 - - [14/Apr/2020 14:58:47] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 15:10:32,075 127.0.0.1 - - [14/Apr/2020 15:10:32] "[37mGET /exp?prolific_id=undefined&participant_id=10&study_id=undefined&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-14 15:11:22,632 127.0.0.1 - - [14/Apr/2020 15:11:22] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 15:11:22,664 127.0.0.1 - - [14/Apr/2020 15:11:22] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 15:11:22,703 127.0.0.1 - - [14/Apr/2020 15:11:22] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 15:11:22,736 127.0.0.1 - - [14/Apr/2020 15:11:22] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 15:11:22,780 127.0.0.1 - - [14/Apr/2020 15:11:22] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 15:11:22,904 127.0.0.1 - - [14/Apr/2020 15:11:22] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 15:11:22,942 127.0.0.1 - - [14/Apr/2020 15:11:22] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-14 15:15:44,936  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 15:15:44,941  * Restarting with stat
+2020-04-14 15:15:47,331  * Debugger is active!
+2020-04-14 15:15:47,360  * Debugger PIN: 712-237-311
+2020-04-14 15:15:48,520 127.0.0.1 - - [14/Apr/2020 15:15:48] "[37mGET /exp?prolific_id=undefined&participant_id=10&study_id=undefined&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-14 15:15:50,526 127.0.0.1 - - [14/Apr/2020 15:15:50] "[37mGET /exp?prolific_id=undefined&participant_id=10&study_id=undefined&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-14 15:15:51,847 127.0.0.1 - - [14/Apr/2020 15:15:51] "[37mGET /exp?prolific_id=undefined&participant_id=10&study_id=undefined&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-14 15:29:23,024  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 15:29:23,149  * Restarting with stat
+2020-04-14 15:29:24,184  * Debugger is active!
+2020-04-14 15:29:24,207  * Debugger PIN: 712-237-311
+2020-04-14 15:29:33,475  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 15:29:33,559  * Restarting with stat
+2020-04-14 15:29:34,196  * Debugger is active!
+2020-04-14 15:29:34,210  * Debugger PIN: 712-237-311
+2020-04-14 15:29:39,372  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 15:29:39,498  * Restarting with stat
+2020-04-14 15:29:40,321  * Debugger is active!
+2020-04-14 15:29:40,334  * Debugger PIN: 712-237-311
+2020-04-14 15:49:25,867  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-14 15:49:26,010  * Restarting with stat
+2020-04-14 15:49:27,034  * Debugger is active!
+2020-04-14 15:49:27,051  * Debugger PIN: 712-237-311
+2020-04-14 16:13:45,348  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-14 16:13:45,350  * Restarting with stat
+2020-04-14 16:13:46,086  * Debugger is active!
+2020-04-14 16:13:46,124  * Debugger PIN: 712-237-311
+2020-04-14 16:14:00,619 127.0.0.1 - - [14/Apr/2020 16:14:00] "[37mGET /exp?prolific_id=undefined&participant_id=10&study_id=undefined&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-14 16:14:02,444 127.0.0.1 - - [14/Apr/2020 16:14:02] "[33mGET /ps_instruct_quiz.html HTTP/1.1[0m" 404 -
+2020-04-14 16:14:02,517 127.0.0.1 - - [14/Apr/2020 16:14:02] "[33mGET /test.html HTTP/1.1[0m" 404 -
+2020-04-14 16:14:02,576 127.0.0.1 - - [14/Apr/2020 16:14:02] "[33mGET /payment.html HTTP/1.1[0m" 404 -
+2020-04-14 16:14:02,650 127.0.0.1 - - [14/Apr/2020 16:14:02] "[33mGET /ps_instruct_demoq.html HTTP/1.1[0m" 404 -
+2020-04-14 16:14:02,667 127.0.0.1 - - [14/Apr/2020 16:14:02] "[33mGET /ps_instruct_1.html HTTP/1.1[0m" 404 -
+2020-04-14 16:14:02,680 127.0.0.1 - - [14/Apr/2020 16:14:02] "[33mGET /ps_instruct_2.html HTTP/1.1[0m" 404 -
+2020-04-14 16:14:02,692 127.0.0.1 - - [14/Apr/2020 16:14:02] "[33mGET /ps_instruct_3.html HTTP/1.1[0m" 404 -
+2020-04-15 11:50:26,000  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-15 11:50:26,002  * Restarting with stat
+2020-04-15 11:50:26,565  * Debugger is active!
+2020-04-15 11:50:26,578  * Debugger PIN: 712-237-311
+2020-04-15 11:50:30,135 127.0.0.1 - - [15/Apr/2020 11:50:30] "[37mGET /exp?prolific_id=coucou&&participant_id=10&&study_id=undefined&&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-15 11:50:30,207 127.0.0.1 - - [15/Apr/2020 11:50:30] "[36mGET /static/prolific_ps_dev_task.js HTTP/1.1[0m" 304 -
+2020-04-15 11:50:31,936 127.0.0.1 - - [15/Apr/2020 11:50:31] "[37mGET /ps_instruct_quiz.html HTTP/1.1[0m" 200 -
+2020-04-15 11:50:31,954 127.0.0.1 - - [15/Apr/2020 11:50:31] "[37mGET /test.html HTTP/1.1[0m" 200 -
+2020-04-15 11:50:31,979 127.0.0.1 - - [15/Apr/2020 11:50:31] "[37mGET /payment.html HTTP/1.1[0m" 200 -
+2020-04-15 11:50:32,004 127.0.0.1 - - [15/Apr/2020 11:50:32] "[37mGET /ps_instruct_demoq.html HTTP/1.1[0m" 200 -
+2020-04-15 11:50:32,022 127.0.0.1 - - [15/Apr/2020 11:50:32] "[37mGET /ps_instruct_1.html HTTP/1.1[0m" 200 -
+2020-04-15 11:50:32,042 127.0.0.1 - - [15/Apr/2020 11:50:32] "[37mGET /ps_instruct_2.html HTTP/1.1[0m" 200 -
+2020-04-15 11:50:32,066 127.0.0.1 - - [15/Apr/2020 11:50:32] "[37mGET /ps_instruct_3.html HTTP/1.1[0m" 200 -
+2020-04-15 11:50:38,522 127.0.0.1 - - [15/Apr/2020 11:50:38] "[37mGET /ps_instruct_1.html HTTP/1.1[0m" 200 -
+2020-04-15 11:50:38,533 127.0.0.1 - - [15/Apr/2020 11:50:38] "[37mGET /ps_instruct_2.html HTTP/1.1[0m" 200 -
+2020-04-15 11:50:38,542 127.0.0.1 - - [15/Apr/2020 11:50:38] "[37mGET /ps_instruct_3.html HTTP/1.1[0m" 200 -
+2020-04-15 11:50:43,239 127.0.0.1 - - [15/Apr/2020 11:50:43] "[37mGET /test.html HTTP/1.1[0m" 200 -
+2020-04-15 11:50:49,904 127.0.0.1 - - [15/Apr/2020 11:50:49] "[36mGET /static/images/highconf.png HTTP/1.1[0m" 304 -
+2020-04-15 11:50:49,913 127.0.0.1 - - [15/Apr/2020 11:50:49] "[36mGET /static/images/lowconf.png HTTP/1.1[0m" 304 -
+2020-04-15 11:51:06,437 127.0.0.1 - - [15/Apr/2020 11:51:06] "[37mGET /ps_instruct_4.html HTTP/1.1[0m" 200 -
+2020-04-15 11:51:08,077 127.0.0.1 - - [15/Apr/2020 11:51:08] "[37mGET /test.html HTTP/1.1[0m" 200 -
+2020-04-15 11:51:17,819 127.0.0.1 - - [15/Apr/2020 11:51:17] "[37mPOST /done HTTP/1.1[0m" 200 -
+2020-04-15 11:56:54,947  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/app.py', reloading
+2020-04-15 11:56:55,042  * Restarting with stat
+2020-04-15 11:56:56,222  * Debugger is active!
+2020-04-15 11:56:56,249  * Debugger PIN: 712-237-311
+2020-04-15 12:07:21,467  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/app.py', reloading
+2020-04-15 12:07:21,676  * Restarting with stat
+2020-04-15 12:07:22,840  * Debugger is active!
+2020-04-15 12:07:22,880  * Debugger PIN: 712-237-311
+2020-04-15 12:08:05,214  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/app.py', reloading
+2020-04-15 12:08:05,322  * Restarting with stat
+2020-04-15 12:08:06,135  * Debugger is active!
+2020-04-15 12:08:06,148  * Debugger PIN: 712-237-311
+2020-04-15 12:11:50,796  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/app.py', reloading
+2020-04-15 12:11:50,955  * Restarting with stat
+2020-04-15 12:11:52,062  * Debugger is active!
+2020-04-15 12:11:52,095  * Debugger PIN: 712-237-311
+2020-04-15 12:14:23,759  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-15 12:14:23,761  * Restarting with stat
+2020-04-15 12:14:24,300  * Debugger is active!
+2020-04-15 12:14:24,316  * Debugger PIN: 712-237-311
+2020-04-15 12:15:17,791 {'new_participant_id': '11'}
+2020-04-15 12:15:17,794 127.0.0.1 - - [15/Apr/2020 12:15:17] "[37mGET /participants_question_data/last_participant_id HTTP/1.1[0m" 200 -
+2020-04-15 12:15:28,712 127.0.0.1 - - [15/Apr/2020 12:15:28] "[37mOPTIONS /participants_question_data/create/11/1/undefined HTTP/1.1[0m" 200 -
+2020-04-15 12:15:28,750 127.0.0.1 - - [15/Apr/2020 12:15:28] "[37mPOST /participants_question_data/create/11/1/undefined HTTP/1.1[0m" 200 -
+2020-04-15 12:15:39,171 127.0.0.1 - - [15/Apr/2020 12:15:39] "[37mGET /exp?prolific_id=undefined&participant_id=11&study_id=undefined&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-15 12:15:41,168 127.0.0.1 - - [15/Apr/2020 12:15:41] "[37mGET /ps_instruct_quiz.html HTTP/1.1[0m" 200 -
+2020-04-15 12:15:41,175 127.0.0.1 - - [15/Apr/2020 12:15:41] "[37mGET /test.html HTTP/1.1[0m" 200 -
+2020-04-15 12:15:41,184 127.0.0.1 - - [15/Apr/2020 12:15:41] "[37mGET /payment.html HTTP/1.1[0m" 200 -
+2020-04-15 12:15:41,192 127.0.0.1 - - [15/Apr/2020 12:15:41] "[37mGET /ps_instruct_demoq.html HTTP/1.1[0m" 200 -
+2020-04-15 12:15:41,215 127.0.0.1 - - [15/Apr/2020 12:15:41] "[37mGET /ps_instruct_1.html HTTP/1.1[0m" 200 -
+2020-04-15 12:15:41,240 127.0.0.1 - - [15/Apr/2020 12:15:41] "[37mGET /ps_instruct_2.html HTTP/1.1[0m" 200 -
+2020-04-15 12:15:41,253 127.0.0.1 - - [15/Apr/2020 12:15:41] "[37mGET /ps_instruct_3.html HTTP/1.1[0m" 200 -
+2020-04-15 12:15:47,363 127.0.0.1 - - [15/Apr/2020 12:15:47] "[37mGET /ps_instruct_1.html HTTP/1.1[0m" 200 -
+2020-04-15 12:15:47,377 127.0.0.1 - - [15/Apr/2020 12:15:47] "[37mGET /ps_instruct_2.html HTTP/1.1[0m" 200 -
+2020-04-15 12:15:47,388 127.0.0.1 - - [15/Apr/2020 12:15:47] "[37mGET /ps_instruct_3.html HTTP/1.1[0m" 200 -
+2020-04-15 12:15:50,959 127.0.0.1 - - [15/Apr/2020 12:15:50] "[37mGET /test.html HTTP/1.1[0m" 200 -
+2020-04-15 12:16:12,190 127.0.0.1 - - [15/Apr/2020 12:16:12] "[37mGET /ps_instruct_4.html HTTP/1.1[0m" 200 -
+2020-04-15 12:16:13,585 127.0.0.1 - - [15/Apr/2020 12:16:13] "[37mGET /test.html HTTP/1.1[0m" 200 -
+2020-04-15 12:16:27,783 127.0.0.1 - - [15/Apr/2020 12:16:27] "[37mPOST /done HTTP/1.1[0m" 200 -
+2020-04-15 12:18:05,718  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/app.py', reloading
+2020-04-15 12:18:05,864  * Restarting with stat
+2020-04-15 12:18:06,958  * Debugger is active!
+2020-04-15 12:18:06,983  * Debugger PIN: 712-237-311
+2020-04-15 12:18:09,042  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/app.py', reloading
+2020-04-15 12:18:09,130  * Restarting with stat
+2020-04-15 12:18:09,811  * Debugger is active!
+2020-04-15 12:18:09,824  * Debugger PIN: 712-237-311
+2020-04-15 12:18:22,138  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/app.py', reloading
+2020-04-15 12:18:22,248  * Restarting with stat
+2020-04-15 12:18:23,164  * Debugger is active!
+2020-04-15 12:18:23,179  * Debugger PIN: 712-237-311
+2020-04-15 12:18:49,807  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/app.py', reloading
+2020-04-15 12:18:49,906  * Restarting with stat
+2020-04-15 12:21:09,112  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-15 12:21:09,113  * Restarting with stat
+2020-04-15 12:21:09,761  * Debugger is active!
+2020-04-15 12:21:09,777  * Debugger PIN: 712-237-311
+2020-04-15 12:21:18,996  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/app.py', reloading
+2020-04-15 12:21:19,121  * Restarting with stat
+2020-04-15 12:21:20,101  * Debugger is active!
+2020-04-15 12:21:20,119  * Debugger PIN: 712-237-311
+2020-04-15 12:25:12,366 {'new_participant_id': '12'}
+2020-04-15 12:25:12,370 127.0.0.1 - - [15/Apr/2020 12:25:12] "[37mGET /participants_question_data/last_participant_id HTTP/1.1[0m" 200 -
+2020-04-15 12:25:23,400 127.0.0.1 - - [15/Apr/2020 12:25:23] "[37mOPTIONS /participants_question_data/create/12/1/undefined HTTP/1.1[0m" 200 -
+2020-04-15 12:25:23,430 127.0.0.1 - - [15/Apr/2020 12:25:23] "[37mPOST /participants_question_data/create/12/1/undefined HTTP/1.1[0m" 200 -
+2020-04-15 12:25:27,641 127.0.0.1 - - [15/Apr/2020 12:25:27] "[37mGET /exp?prolific_id=undefined&participant_id=12&study_id=undefined&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-15 12:25:29,125 127.0.0.1 - - [15/Apr/2020 12:25:29] "[37mGET /ps_instruct_quiz.html HTTP/1.1[0m" 200 -
+2020-04-15 12:25:29,134 127.0.0.1 - - [15/Apr/2020 12:25:29] "[37mGET /test.html HTTP/1.1[0m" 200 -
+2020-04-15 12:25:29,147 127.0.0.1 - - [15/Apr/2020 12:25:29] "[37mGET /payment.html HTTP/1.1[0m" 200 -
+2020-04-15 12:25:29,151 127.0.0.1 - - [15/Apr/2020 12:25:29] "[37mGET /ps_instruct_demoq.html HTTP/1.1[0m" 200 -
+2020-04-15 12:25:29,190 127.0.0.1 - - [15/Apr/2020 12:25:29] "[37mGET /ps_instruct_1.html HTTP/1.1[0m" 200 -
+2020-04-15 12:25:29,222 127.0.0.1 - - [15/Apr/2020 12:25:29] "[37mGET /ps_instruct_2.html HTTP/1.1[0m" 200 -
+2020-04-15 12:25:29,244 127.0.0.1 - - [15/Apr/2020 12:25:29] "[37mGET /ps_instruct_3.html HTTP/1.1[0m" 200 -
+2020-04-15 12:25:30,845 127.0.0.1 - - [15/Apr/2020 12:25:30] "[37mGET /ps_instruct_1.html HTTP/1.1[0m" 200 -
+2020-04-15 12:25:30,857 127.0.0.1 - - [15/Apr/2020 12:25:30] "[37mGET /ps_instruct_2.html HTTP/1.1[0m" 200 -
+2020-04-15 12:25:30,866 127.0.0.1 - - [15/Apr/2020 12:25:30] "[37mGET /ps_instruct_3.html HTTP/1.1[0m" 200 -
+2020-04-15 12:25:33,603 127.0.0.1 - - [15/Apr/2020 12:25:33] "[37mGET /test.html HTTP/1.1[0m" 200 -
+2020-04-15 12:25:56,009 127.0.0.1 - - [15/Apr/2020 12:25:56] "[37mGET /ps_instruct_4.html HTTP/1.1[0m" 200 -
+2020-04-15 12:25:57,234 127.0.0.1 - - [15/Apr/2020 12:25:57] "[37mGET /test.html HTTP/1.1[0m" 200 -
+2020-04-15 12:26:07,698 127.0.0.1 - - [15/Apr/2020 12:26:07] "[37mPOST /done HTTP/1.1[0m" 200 -
+2020-04-15 12:27:29,239  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-15 12:27:29,361  * Restarting with stat
+2020-04-15 12:27:30,299  * Debugger is active!
+2020-04-15 12:27:30,313  * Debugger PIN: 712-237-311
+2020-04-15 12:27:34,463  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-15 12:27:34,630  * Restarting with stat
+2020-04-15 12:27:35,523  * Debugger is active!
+2020-04-15 12:27:35,544  * Debugger PIN: 712-237-311
+2020-04-15 12:27:51,975  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-15 12:27:52,112  * Restarting with stat
+2020-04-15 12:27:54,020  * Debugger is active!
+2020-04-15 12:27:54,062  * Debugger PIN: 712-237-311
+2020-04-15 12:28:02,317  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-15 12:28:02,391  * Restarting with stat
+2020-04-15 12:28:03,095  * Debugger is active!
+2020-04-15 12:28:03,108  * Debugger PIN: 712-237-311
+2020-04-15 12:28:17,596 127.0.0.1 - - [15/Apr/2020 12:28:17] "[1m[35mGET /consent?prolific_id=coucou&participant_id=0&study_id=kiki HTTP/1.1[0m" 500 -
+2020-04-15 12:28:17,743 127.0.0.1 - - [15/Apr/2020 12:28:17] "[37mGET /consent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+2020-04-15 12:28:17,745 127.0.0.1 - - [15/Apr/2020 12:28:17] "[37mGET /consent?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+2020-04-15 12:28:17,747 127.0.0.1 - - [15/Apr/2020 12:28:17] "[37mGET /consent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+2020-04-15 12:28:18,245 127.0.0.1 - - [15/Apr/2020 12:28:18] "[37mGET /consent?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+2020-04-15 12:28:18,311 127.0.0.1 - - [15/Apr/2020 12:28:18] "[37mGET /consent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2020-04-15 12:28:50,389 127.0.0.1 - - [15/Apr/2020 12:28:50] "[37mGET /exp?prolific_id=coucou&&participant_id=10&&study_id=undefined&&longit_id=1 HTTP/1.1[0m" 200 -
+2020-04-15 12:28:52,148 127.0.0.1 - - [15/Apr/2020 12:28:52] "[37mGET /ps_instruct_quiz.html HTTP/1.1[0m" 200 -
+2020-04-15 12:28:52,159 127.0.0.1 - - [15/Apr/2020 12:28:52] "[37mGET /test.html HTTP/1.1[0m" 200 -
+2020-04-15 12:28:52,161 127.0.0.1 - - [15/Apr/2020 12:28:52] "[37mGET /ps_instruct_demoq.html HTTP/1.1[0m" 200 -
+2020-04-15 12:28:52,168 127.0.0.1 - - [15/Apr/2020 12:28:52] "[37mGET /payment.html HTTP/1.1[0m" 200 -
+2020-04-15 12:28:52,183 127.0.0.1 - - [15/Apr/2020 12:28:52] "[37mGET /ps_instruct_1.html HTTP/1.1[0m" 200 -
+2020-04-15 12:28:52,195 127.0.0.1 - - [15/Apr/2020 12:28:52] "[37mGET /ps_instruct_2.html HTTP/1.1[0m" 200 -
+2020-04-15 12:28:52,209 127.0.0.1 - - [15/Apr/2020 12:28:52] "[37mGET /ps_instruct_3.html HTTP/1.1[0m" 200 -
+2020-04-15 12:28:53,796 127.0.0.1 - - [15/Apr/2020 12:28:53] "[37mGET /ps_instruct_1.html HTTP/1.1[0m" 200 -
+2020-04-15 12:28:53,808 127.0.0.1 - - [15/Apr/2020 12:28:53] "[37mGET /ps_instruct_2.html HTTP/1.1[0m" 200 -
+2020-04-15 12:28:53,817 127.0.0.1 - - [15/Apr/2020 12:28:53] "[37mGET /ps_instruct_3.html HTTP/1.1[0m" 200 -
+2020-04-15 12:28:56,587 127.0.0.1 - - [15/Apr/2020 12:28:56] "[37mGET /test.html HTTP/1.1[0m" 200 -
+2020-04-15 12:29:21,872 127.0.0.1 - - [15/Apr/2020 12:29:21] "[37mGET /ps_instruct_4.html HTTP/1.1[0m" 200 -
+2020-04-15 12:29:23,282 127.0.0.1 - - [15/Apr/2020 12:29:23] "[37mGET /test.html HTTP/1.1[0m" 200 -
+2020-04-15 12:29:37,148 127.0.0.1 - - [15/Apr/2020 12:29:37] "[37mPOST /done HTTP/1.1[0m" 200 -
+2020-04-15 12:30:17,330  * Detected change in '/Users/vasilisaskvortsova/Documents/COVID-19/LOCAL/covid-api/routes/task.py', reloading
+2020-04-15 12:30:17,470  * Restarting with stat
+2020-04-15 12:30:18,523  * Debugger is active!
+2020-04-15 12:30:18,548  * Debugger PIN: 712-237-311

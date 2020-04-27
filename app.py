@@ -1,14 +1,14 @@
+import os
+import logging
 import warnings
 import subprocess
 from flask_cors import CORS
-from flask import Flask, jsonify, request, abort
-import os
+from flask import Flask, jsonify, request, abort, Response, make_response, render_template 
 from models.db import db
 from models.install import install_models
 from config import config  
 
 
-#to test well functioning : https://rlnoise.osc-fr1.scalingo.io/testmethod
 warnings.filterwarnings("ignore")
 
 # Set up logging
