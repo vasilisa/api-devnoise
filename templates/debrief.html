@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+
+<link rel="shortcut icon" href="static/images/brainicon.ico">
+  <head>
+    <title>Experiment</title>
+    <meta charset="utf-8">
+    <script src="static/raphael-min.js" type="text/javascript"> </script>
+    <script src="static/jquery-min.js" type="text/javascript"> </script>
+    <script src="static/raphael-animate-along.js" type="text/javascript"> </script>
+
+    <script language="JavaScript">
+
+  function parseURL(url) {
+        var parser = document.createElement('a'),
+          searchObject = {},
+          queries, split, i;
+        // Let the browser do the work
+        parser.href = url;
+        // Convert query string to object
+        queries = parser.search.replace(/^\?/, '').split('&');
+        for( i = 0; i < queries.length; i++ ) {
+            split = queries[i].split('=');
+            searchObject[split[0]] = split[1];
+        }
+      return {
+          protocol: parser.protocol,
+          host: parser.host,
+          hostname: parser.hostname,
+          port: parser.port,
+          pathname: parser.pathname,
+          search: parser.search,
+          searchObject: searchObject,
+          hash: parser.hash
+      };
+    }
+
+    var url = parseURL(window.location.href); // full url = window.location.href
+
+    // Subject info: to propagate later 
+    var participant_info            = {}
+        participant_info.study_id   = url.searchObject['study_id'];
+
+
+    // Subject info
+    var prolific_id    = url.searchObject['prolific_id'];
+    var study_id       = url.searchObject['study_id'];
+    var participant_id = url.searchObject['participant_id'];
+    var longit_id      = url.searchObject['longit_id'];
+
+
+    console.log('Debrief Prolific_id',prolific_id)
+
+    /*********************
+    * Get things started *
+    ********************/
+
+    $(window).load( function(){
+      runfun = function() {
+                    startTask();
+                    instructobject = new Instructions(['debrief']);
+                       };
+
+
+      for (i=0; i<pagenames.length; i++) {
+        var pagename = pagenames[i];
+
+        $.ajax({
+          url: pagename + ".html",
+          success: function(pagename){ return function(page){ pages[pagename] = page; } }(pagename),
+          async: false
+        });
+      }
+      runfun();
+    });
+
+//here is where you call the js file to execute?
+
+    </script>
+
+    <script src="static/debrief.js" type="text/javascript"> </script>
+    <link rel=stylesheet href="static/questTask.css" type="text/css" media="screen">
+  </head>
+<body>
+  <noscript>
+    <h1>Warning: Javascript seems to be disabled</h1>
+    <p>This website requires that Javascript be enabled on your browser.</p>
+    <p>Instructions for enabling Javascript in your browser can be found <a
+      href="http://support.google.com/bin/answer.py?hl=en&answer=23852">here</a><p>
+  </noscript>
+</body>
+</html>
+
+
+<!-- 
+
+
+
+
+
+<!doctype html>
+
+<html>
+<link rel="shortcut icon" href="static/images/flavicon.ico">
+<link rel=stylesheet href="static/questTask.css/" type="text/css" media="screen">
+<head>
+	<title>Debriefing</title>
+			<script src="static/jquery-min.js" type="text/javascript">
+			<link rel=stylesheet href="static/questTask.css/" type="text/css" media="screen">
+	    	</script>
+</head>
+<body>
+</body>
+
+<script>
+	function endExpt(){
+		window.location='end?prolific_id=' + prolific_id + '&study_id=' + study_id + '&participant_id=' + particiapnt_id+'&longit_id='+ longit_id;
+		}
+	</script>
+
+<div id="debriefing">
+		<h1>Thank you very much!</h1>
+
+		<p style="text-align: justify;">You have now completed the entire study! Your data makes an important contribution to our understanding of mental health.</p>
+
+		<p style="text-align: justify;">In this experiment, we were interested in how you learn from previous experience (adjusting the bucket position to catch the coins) and how that is reflected in your confidence ratings. Previous work has linked differences in behaviour and confidence ratings to psychiatric disorders, which we are aiming to understand better. Thanks for your help!</p>
+
+		<p style="text-align: justify;">If you feel that completing the questionnaires on any of the psychopathologies caused you any distress, please use the following contact details for help and support.</p>
+
+		<div id="affirmationbox">
+    <i>Web pages</i><br>
+	  <strong>NHS:</strong> <a
+		href="https://www.nhs.uk/oneyou/every-mind-matters/">https://www.nhs.uk/oneyou/every-mind-matters/</a><br><br>
+		<strong>Mind Mental Health Charity:</strong><br><a href="https://www.mind.org.uk">https://www.mind.org.uk</a>
+		<br><br>
+    <br></br>
+	  </div>
+
+<br></br>
+<div>
+<form id="postquiz" action="subjSave" method="post">
+
+<table>
+<tr class="question">
+    <td class="questiontext">
+        We may want to re-invite you for follow-up or similar studies relating to this project.<br>Please choose either 'Agree' or 'Disagree'.<br>If you agree, you will need to provide us with your name and email address.
+    </td>
+    <td class="answer">
+        <select id="ContactDropdownId" name="ContactDropdown" onchange='Check();'>
+            <option value="select">--Select One--</option>
+            <option value="Agree">Agree</option>
+            <option value="Disagree">Disgree</option>
+        </select>
+    </td>
+</tr>
+
+  <tr class="question"  id="contact_name" style="visibility:hidden">
+      <td class="questiontext">
+        First Name
+      </td>
+      <td class="answer">
+        <textarea rows="1" cols="20" name="Name" id="NameId"></textarea>
+      </td>
+  </tr>
+
+  <tr class="question" id="contact_surname" style="visibility:hidden">
+      <td class="questiontext">
+        Surname
+      </td>
+      <td class="answer">
+        <textarea rows="1" cols="20" name="Surname" id="SurnameId"></textarea>
+      </td>
+  </tr>
+
+	<tr class="question" id="contact_email" style="visibility:hidden">
+      <td class="questiontext">
+        Email
+      </td>
+      <td class="answer">
+        <textarea rows="1" cols="35" name="Email" id="EmailId"></textarea>
+      </td>
+  </tr>
+
+<tr class="question">
+		<td class="questiontext">
+			If you have any comments relating to the study, please let us know here:
+		</td>
+		<td class="answer">
+			<textarea rows="10" cols="35" name="Comments" id="CommentsId"></textarea>
+		</td>
+</tr>
+</table>
+
+<input type="button" class="continue" id="continue" value="Next" style="visibility: hidden;" onclick=endExpt();></input>
+</form>
+ <p><strong>Click 'Next' to submit your details and proceed to the HIT submission page. If the button does not appear, please check that you have selected an option for the question above. </strong></p>
+</div>
+</div>
+</html>
+
+<script>
+
+var Check = function(){
+
+    if(ContactDropdownId.value == "select"){
+        $('input#continue').css('visibility','hidden');
+    }
+		else {
+			  $('input#continue').css('visibility','visible');
+	}
+
+    if(ContactDropdownId.value == "Agree"){
+	$('tr#contact_name').css('visibility','visible');
+	$('tr#contact_surname').css('visibility','visible');
+	$('tr#contact_email').css('visibility','visible');
+    }
+    else {
+			$('tr#contact_name').css('visibility','hidden');
+			$('tr#contact_surname').css('visibility','hidden');
+			$('tr#contact_email').css('visibility','hidden');
+}
+}
+</script>
+
+</html>
+
+
+
+ -->

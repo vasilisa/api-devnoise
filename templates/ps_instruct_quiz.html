@@ -1,0 +1,90 @@
+<script>
+    setTimeout(function(){ $('div#nextButton').css('visibility','visible'); }, 1);
+    </script>
+
+<div class="instruct" id="main">
+
+    <p>Here is a short quiz to test if you understood the instructions correctly.</p>
+    <p>If you missed any important things, we will bring you through the instructions again.</p>
+
+<br></br>
+        <form id="postquiz" action="done" method="post">
+            <table cellspacing=15>
+                      <tr class="question">
+                          <td class="questiontext">
+                              How can I get the most points?
+                          </td>
+                          <td class="answer">
+                              <select id="coinAimCheck" name="coinAimCheck">
+                                  <option value="4">By catching the flying asteroids with my bucket</option>
+                                  <option value="3">By avoiding the flying asteroids with my bucket</option>
+                                  <option value="2">By randomly placing my bucket</option>
+                                  <option value="1" SELECTED>I don't know</option>
+                              </select>
+                          </td>
+                      </tr>
+
+                      <tr class="question">
+                          <td class="questiontext">
+                              Will the asteroids always fly to the same position?
+                          </td>
+                          <td class="answer">
+                              <select id="coinFlyCheck" name="coinFlyCheck">
+                                  <option value="4">No, they will fly to DIFFERENT locations all the time</option>
+                                  <option value="3">No, they will fly to ALMOST the same location, but sometimes this will change</option>
+                                  <option value="2">Yes, they will fly to the SAME location all the time</option>
+                                  <option value="1" SELECTED>I don't know</option>
+                              </select>
+                          </td>
+                      </tr>
+
+                      <tr class="question">
+                          <td class="questiontext">
+                            What am I rating my confidence on?
+                          </td>
+                          <td class="answer">
+                              <select id="confRateCheck" name="confRateCheck">
+                                  <option value="4">How confident I am that my bucket will MISS the asteroid</option>
+                                  <option value="3">How confident I am that my bucket will CATCH the asteroid</option>
+                                  <option value="2">How confident I am that I am using the scale correctly</option>
+                                  <option value="1" SELECTED>I don't know</option>
+                              </select>
+                          </td>
+                      </tr>
+
+
+                      <tr class="question">
+                          <td class="questiontext">
+                              If I choose my confidence level like this,
+                              <img src="static/images/highconf.png" alt="image failed to load" style="width:180;height:45px;">
+                              it means:
+                          </td>
+                          <td class="answer">
+                              <select id="HighConfCheck" name="HighConfCheck">
+                                  <option value="4">I am very UNCERTAIN that the asteroid will LAND in my bucket</option>
+                                  <option value="3">I am very CERTAIN that the asteroid will NOT LAND</strong> in my bucket<option>
+                                  <option value="2">I am very CERTAIN that the asteroid will LAND in my bucket</option>
+                                  <option value="1" SELECTED>I don't know</option>
+                              </select>
+                          </td>
+                      </tr>
+
+                      <tr class="question">
+                          <td class="questiontext">
+                              If I choose my confidence level like this,
+                              <img src="static/images/lowconf.png" alt="image failed to load" style="width:180;height:45px;">
+                              it means:
+                          </td>
+                          <td class="answer">
+                              <select id="LowConfCheck" name="LowConfCheck">
+                                  <option value="4">I am very UNCERTAIN that the asteroid will LAND in my bucket</option>
+                                  <option value="3">I am very UNCERTAIN that the asteroid will NOT LAND in my bucket</option>
+                                  <option value="2">I am very CERTAIN that the asteroid will LAND in my bucket</option>
+                                  <option value="1" SELECTED>I don't know</option>
+                              </select>
+                          </td>
+                      </tr>
+
+            </table>
+            <input type="button" class="continue" id="continue" value="Continue"></input>
+     </div>

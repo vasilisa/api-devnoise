@@ -1,0 +1,58 @@
+<html>
+  <script src="static/jquery-3.5.0.js" type="text/javascript"> </script>
+  <link rel=stylesheet href="static/questTask.css/" type="text/css" media="screen">
+  <script type="text/javascript">
+
+  console.log('Feedback') 
+
+  // This is for the external redirection to a new template function endExpt(){
+  //   window.location='end?prolific_id=' + prolific_id + '&participant_id=' + participant_id + '&study_id=' + study_id +'&longit_id='+ longit_id;
+  //   }
+
+
+ // Get the input field
+ var input = document.getElementById("FeedbackId");
+
+ $(document).on("keydown", ":input:not(text)", function(event) {
+    return event.key != "Enter";
+  });
+
+  </script>
+
+  <div id="feedback" style="text-align: center; font-size: 16pt;">
+    <h1>Thank you very much!</h1>
+
+    <p style="text-align: center;">In this experiment, we were interested in how you learn from previous experience (adjusting the bucket position to catch the coins) and how that is reflected in your confidence ratings. Previous work has linked differences in behaviour and confidence ratings to psychiatric disorders, which we are aiming to understand better. Thanks for your help!</p>
+    
+    </div>
+
+<br></br>
+<div style="text-align: center; font-size: 16pt;">
+<center>
+<p>If you have any comments or have encountered any difficulties completing questionnaires or the game, please feel free to include them in the box below.</p>
+<br></br>
+  <form class="feedbacktext" style="width:55%; padding-left:-100px">
+    <input type='text' style="text-align: top left; font-size:12pt; width:100%" maxlength="10000" name="Feedback" id="FeedbackId" value="">
+</form>
+<br></br>
+<br></br>
+<p>Click <strong>'Next'</strong> to submit your feedback and proceed to the validation page.</p>
+<br></br>
+<div>
+<div id="nextButton">
+  <input type="button" style="width: 120px;height: 40px;margin-bottom: 20px" class="continue" id="continue" value="Next"/>
+</div>
+</div>
+</center>
+</div>
+
+<!-- This is for external redirection to a new template <input type="button" class="continue" id="continue" value="Next" style="visibility: visible;" onclick=endExpt();></input>
+</form>
+ <p><strong>Click 'Next' to submit your feedback and proceed to the validation page.</strong></p>
+</div>
+</div>
+action="feedbackSave" method="post">
+ -->
+ </html>
+
+

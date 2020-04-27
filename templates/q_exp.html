@@ -1,0 +1,47 @@
+<!doctype html>
+
+<link rel='stylesheet' type='text/css' href='static/task.css'/>
+
+<!-- <head>
+	<title>End of Experiment</title>
+			<script src="static/jquery-min.js" type="text/javascript">
+					document.getElementById("validate").onclick = function () {
+        			// location.href =  "https://app.prolific.co/submissions/complete?cc=" + participant_info.study_id;  
+        			location.href = "https://devcompsy.org"
+        	};
+        	
+			</script>
+</head>
+ -->
+<!-- <script language="JavaScript">
+ // $("#workerId").html(workerId);
+</script> -->
+
+<body>
+<div class="instruct" id="main">
+<center>
+<strong><p>Thank you again for helping research!</p></strong>
+
+<p style="text-align: justify;">Well done! You have helped us prevent many space disasters by cleaning up space from debris</p>
+
+<p style="text-align: justify;">This is the end of the experiment, please let us know by email that you have finished.</p>
+<p>Thank you for helping us with our research!</p>
+
+<p>Curious Development Team</p>
+
+<center>
+<div id="nextButton">
+<button type="button" class="continueButton" style="cursor:pointer;width: 80px;height: 40px;margin-bottom: 20px;font-size:14pt; " id="validate">FINISH</button>
+</div>
+</center>
+</div>
+</body>
+
+<script  type="text/javascript">
+        document.getElementById("validate").onclick = function () {
+	      window.onbeforeunload = null;   // redirect after 10 sec 
+	      window.location.replace("https://devcompsy.org");}
+	      
+</script>
+
+ 

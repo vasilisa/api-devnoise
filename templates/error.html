@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<link rel=stylesheet href="static/questTask.css" type="text/css" media="screen">
+	<head>
+		<title>Error</title>
+	</head>
+
+
+   
+<body >
+	    <p>Sorry, there was an unexpected error in our processing of your attempt.<p>
+		
+  	    <p>If you feel you have reached this page in error or have any concerns, please email <a href= "a.loosen17ucl.ac.uk">a.loosen17ucl.ac.uk</a>
+  	    and send the following information:</p>
+	    <p>
+	        <h4>
+	        Error: #{{ errornum }}<br></br>
+	        </h4>
+	    </p>
+	    <h2>
+	    <p>Our sincere apologies!</p>
+	    </h2>
+
+</body>
+</html>
+
+<script  type="text/javascript">
+
+	function getUrlParams( prop ) {
+	    var params = {};
+	    var search = decodeURIComponent( window.location.href.slice( window.location.href.indexOf( '?' ) + 1 ) );
+	    var definitions = search.split( '&' );
+
+	    definitions.forEach( function( val, key ) {
+	        var parts = val.split( '=', 2 );
+	        params[ parts[ 0 ] ] = parts[ 1 ];
+	    } );
+
+	    return ( prop && prop in params ) ? params[ prop ] : params;
+	};
+
+			   var subj = getUrlParams();
+				document.getElementById('prolific_id').innerHTML = subj.prolific_id.toString();
+			   document.getElementById('study_id').innerHTML = subj.study_id.toString();
+	</script>

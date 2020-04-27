@@ -5,10 +5,22 @@ from flask import Flask, jsonify, request, abort
 import os
 from models.db import db
 from models.install import install_models
+from config import config  
 
 
 #to test well functioning : https://rlnoise.osc-fr1.scalingo.io/testmethod
 warnings.filterwarnings("ignore")
+
+# Set up logging
+logfilepath = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                           config.get("Server Parameters", "logfile"))
+# --- Logging ---- # 
+loglevels = [logging.DEBUG, logging.INFO, logging.WARNING, logging.ERROR, logging.CRITICAL]
+loglevel  = loglevels[config.getint("Server Parameters", "loglevel")]
+logging.basicConfig( filename=logfilepath, format='%(asctime)s %(message)s', level=loglevel )
+
+# constants
+CODE_VERSION  = config.get('Task Parameters', 'code_version')
 
 
 app = Flask(__name__)
@@ -27,6 +39,17 @@ def mytest():
     result['test'] = 'ok'
     return jsonify(result), 200
 
+@app.route('/<pagename>')
+def regularpage(pagename=None):
+    
+    """
+        Important!: you need this part to make the sequential page working via showpages! 
+    """
+    if pagename==None:
+        raise ExperimentError('page_not_found')
+
+    return render_template(pagename)
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port,debug=True)
+    app.run(host="0.0.0.0", port=port,debug=False)
