@@ -140,6 +140,7 @@ def myapp():
     # Add Goolge Cloud Storage service to transfer the data to the GCloud 
     return jsonify(result), 200
 
+# THIS IS FOR TESTING MAILING ONLY 
 @app.route("/confirmail",methods=['GET', 'POST'])
 def sendmail():
 
@@ -162,6 +163,7 @@ def sendmail():
     
 if __name__ == '__main__':
 	print("Starting webserver.")
-	app.run(host="0.0.0.0", port=config.getint('Server Parameters', 'port'), debug=config.getboolean('Server Parameters', 'debug'))
-	# port = int(os.environ.get("PORT", 5000))
+	port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
+    
 

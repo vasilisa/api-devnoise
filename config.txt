@@ -16,7 +16,7 @@ logfile: app_log.txt
 loglevel = 2 
 ; 0=DEBUG, 1=INFO, 2=WARNING, 3=ERROR, 4=CRITICAL
 
-debug: 1 
+debug: 0 
 ; true             
 ; NEVER!!! leave this on when exposing the server to the public.
 
