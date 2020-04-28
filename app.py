@@ -57,8 +57,8 @@ app.config.update(dict(
 # -------------------------
 # --- DB configuration ---- 
 # -------------------------
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
-app.config['SQLALCHEMY_DATABASE_URI'] = config.get('Database Parameters','database_url')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+# app.config['SQLALCHEMY_DATABASE_URI'] = config.get('Database Parameters','database_url')
 # 'mysql://root:pwd@localhost/covid19' # maybe put in the cofig 
 
 db.init_app(app)
