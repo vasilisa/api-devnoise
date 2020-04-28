@@ -142,15 +142,20 @@ def savedata():
 
     print("Exp task done route, status is", user.status)
 
-    # Send the email confirmation 
+    # SFOR TESTING ONLY end the email confirmation 
     msg = Message(body      ="Coucou, participant {0} just finished the BUCKET task".format(prolific_id),
                   subject   ='Curious Development Study',
-                  recipients=["vasilisaskv@gmail.com"])
+                  recipients=["vasilisaskv@gmail.com","johanna.habicht.15@ucl.ac.uk"])
 
     mail.send(msg)
-    # return {'message': 'It worked?'}, 200
+    
+    msg = Message(body      ="Coucou, participant {0} just finished the BUCKET task".format(prolific_id),
+                  subject   ='Curious Development Study',
+                  recipients=["johanna.habicht.15@ucl.ac.uk"])
 
-#    return "Success" 
+    mail.send(msg)
+    
+#    return {'message': 'It worked?'}, 200
     render_template('debriefing.html')
 
 @app.route('/inexp', methods=['POST']) # not sure where it is called 
