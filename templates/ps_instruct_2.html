@@ -1,27 +1,22 @@
 <div class="instruct" id="main">
 
-  <p>After you have positioned the space bucket on the ring, you will rate how confident you are that the asteroid will land on the bucket. Your confidence can range from <strong>low</strong> to <strong>high</strong>.</p>
+<div id="ps_instruct_1"></div>
 
-  <div id="ps_instruct_2"></div>
+  <br>
+  <p>Try moving the bucket now!</p>
 
-  <p>Try using the slider now!</p>
-
-  <p>A <strong style="color:white">low</strong> confidence means that you are <strong style="color:white;">very uncertain</strong> that the asteroid will land in your bucket. <br>
-  A <strong style="color:white">high</strong> confidence means that you are <strong style="color:white;">very certain</strong> that the asteroid will land in your bucket.</p>
-
-  <p>The small orange bar in the middle of the scale indicates your level of confidence.</p> 
+  <p>To move the bucket press either the <strong style="color:#56D8DB;">LEFT</strong> or the <strong style="color:#EA3C13;">RIGHT</strong> ARROW key.</p>
   
-  <p>To show that you feel <strong style="color:white">less</strong> certain, move the orange indicator <strong style="color:#56D8DB;">leftward</strong> by pressing the <strong style="color:#56D8DB;;">LEFT ARROW</strong> key.<br>
-  To show that you feel <strong style="color:white">more</strong> certain, move the orange <strong style="color:#EA3C13;">rightward</strong> by pressing the <strong style="color:#EA3C13;">RIGHT ARROW</strong> key.</p>
+  <img class="keyboard" src="/static/images/keyboard.png" alt="image failed to load" style="width:800px; height:220px;padding-top:5px; padding-bottom:2px; position:relative">
   
-  <p>Press the <strong style="color:#54DC5E;">SPACEBAR</strong> to <strong>confirm</strong> your confidence indicator position.</p>
-
-  <img class="keyboard" src="/static/images/keyboard.png" alt="image failed to load" style="width:800px; height:220px;padding-top:5px; padding-bottom:1px; position:relative">
-  <div class="instruct" id="main"></div>
-  <div id="nextButton" style="visibility: visible;">
-  <input type="button" class="continue" id="continue" value="Next" />
-  </div>
-  </div>
+  <div class="instruct" id="spacebar" style="visibility:hidden">
+  <p>Press the <strong style="color:#54DC5E;">SPACEBAR</strong> to <strong style="color:white;">confirm</strong> your bucket position.</p>
+  <br>
+  
+<div id="nextButton" style="visibility: visible;">
+<input type="button" class="continue" id="continue" value="Next" style="visibility: visible;"></input>
+</div>
+</div>
 
 <script type="text/javascript">
 
@@ -37,161 +32,188 @@ function enableBtn() {
 
 }
 
-//setTimeout(function(){ $('div#nextButton').css('visibility','visible'); }, 8000);
+
 // for keyboard functions
 var leftKey  = 37;
 var rightKey = 39;
 var spaceKey = 32;
 
 var canvas_width   = 800;
-var canvas_height  = 90;
+var canvas_height  = 340;
 var canvas_xCenter = canvas_width/2;
 var canvas_yCenter = canvas_height/2;
 
-var col_confBar     = '#E5E5E5'; // aka rbg 229 229 229
-var col_bucket      = '#FF8000'; // aka 255 128 0
-var col_black       = '#000000'; // aka rgb 000 000 000bucket          = '#FF8000'; //aka 255 128 0
-var col_background  = '#3F3979'; // the same color as the background image main color #808080';// aka rgb 128 128 128
-var col_white       = '#FFFFFF'; // aka rgb 000 000 000bucket          = '#FF8000'; //aka 255 128 0
+var stim_std            = 12;
+var stim_cirDia         = 300; // diameter of big circle (every degree = 4 px)
+var stim_cirThickness   = 10;
+var stim_cirNPos        = 360; // number of possible end points on circle
+var stim_innerCirDia    = stim_cirDia-stim_cirThickness; //to draw inner circle to get a ring
+var stim_dotDia         = 8; // radius (or dia?) of money dots (in px?)
+var stim_bucketDepth    = 35;
+var stim_bucketDia      = stim_cirDia + stim_bucketDepth;
+var stim_bucketSize     = stim_std*3; //bucket is 3 sd of distribution //this is in degrees
+var stim_fixDia         = 9; //dia of the fixation circle
+var stim_bucketSpeed    = 3; // 2 orig
+var data_buckPos          =Math.floor(Math.random()*stim_cirNPos);
 
+var col_white           = '#FFFFFF';// aka rgb 255 255 255
+var col_background      = '#3F3979';// aka rgb 128 128 128
+var col_bucket          = '#FF8000'; //aka 255 128 0
 
-var  conf_barHeight       = 20;
-var  conf_barWidth        = 500;
-var  conf_indRand         = [25,75];
-var  conf_indHeight       = conf_barHeight+10; //for the indicatior
-var  conf_indWidth        = conf_barWidth/100;
-var  conf_range           = [1,100]; // min and max value of conf?
-var  conf_startPos        = 50;
+function draw_defaultCircle(canvas_xCenter, canvas_yCenter, stim_cirDia, stim_innerCirDia, stim_dotDia, col_white, col_background) {
 
-paper = Raphael("ps_instruct_2", canvas_width, canvas_height);
-paper.canvas.style.backgroundColor = col_background; //initialise canvas to be grey
-
-var confBar = paper.rect(canvas_xCenter - (conf_barWidth / 2), canvas_height + 10, conf_barWidth, conf_barHeight).attr({
+	var outerCircle = instructPaper1.circle(canvas_xCenter, canvas_yCenter, stim_cirDia / 2).attr({
 		stroke: col_white,
-		"stroke-width": 3,
-		fill: col_confBar
+		fill: col_background
+	});
+	var innercircle = instructPaper1.circle(canvas_xCenter, canvas_yCenter, stim_innerCirDia / 2).attr({
+		stroke: col_white,
+		fill: col_background
+	});
+  // for the DOT - star at the center 
+	var fixDot = instructPaper1.circle(canvas_xCenter, canvas_yCenter, stim_dotDia / 2).attr({
+		stroke: col_white,
+		fill: col_white
 	});
 
-function confConvert(canvas_xCenter,conf_barWidth,newConf)
-{
-	var conf_pos = (canvas_xCenter-conf_barWidth/2)+5*newConf;
-	return conf_pos;
+	return fixDot;
 }
 
-//this will draw the confidence box
-function draw_confBar(canvas_xCenter, canvas_height, conf_barWidth, conf_barHeight,col_confBar, col_black) {
-	//confidence box
-	var confBar = paper.rect(canvas_xCenter - (conf_barWidth / 2), canvas_height/2, conf_barWidth, conf_barHeight).attr({
-		stroke: col_white,
-		"stroke-width": 2,
-		fill: col_confBar
-	});
-
-	//confidence text
-	var confBegin = paper.text(canvas_xCenter - (conf_barWidth / 2), canvas_height/2 - 15, "very uncertain").attr({
-		stroke: col_white ,
-  	"font-size": 25,
-    "padding-bottom":5,
-  	fill: col_white 
-	});
-	var confEnd = paper.text(canvas_xCenter + (conf_barWidth / 2), canvas_height/2 - 15, "very certain").attr({
-		stroke: col_white ,
-		"font-size": 25,
-    "padding-top":5,
-    "padding-bottom":5,
-		fill: col_white 
-	});
-
-	return {confBar:confBar,
-	confBegin:confBegin,
-	confEnd:confEnd
-	};
-}
-
-//this will draw the confIndicator (this is the thing that will need to redraw....)
-//confidence indicator..conf_pos is where the indicator is placed, in dot coord. middle is canvas_xCenter
-function draw_confInd(canvas_height, conf_indWidth, conf_indHeight, col_bucket, conf_pos) {
-	var confInd = paper.rect(conf_pos-(conf_indWidth/2), canvas_height/2 , conf_indWidth, conf_indHeight).attr({
+function draw_bucket(canvas_xCenter, canvas_yCenter, stim_cirDia, stim_innerCirDia, stim_bucketDia, stim_bucketSize, col_bucket, col_background, bucket_pos) {
+	//the inputs are in degrees
+	//this is for the orange part
+	var bucket1 = instructPaper1.path().attr({
 		stroke: col_bucket,
+		fill: col_bucket,
 		"stroke-width": 2,
-		fill: col_bucket
+		arc: [canvas_xCenter, canvas_yCenter, bucket_pos, bucket_pos + stim_bucketSize, stim_cirDia / 2, stim_bucketDia / 2]
 	});
-	return confInd;
+	//this is for the grey part
+	var bucket2 = instructPaper1.path().attr({
+		stroke: col_white,
+		fill: col_white,
+		"stroke-width": 2,
+		arc: [canvas_xCenter, canvas_yCenter, bucket_pos, bucket_pos + stim_bucketSize, stim_innerCirDia / 2, stim_cirDia / 2]
+	});
+
+
+	return {
+		bucket1:bucket1,
+		bucket2: bucket2
+	};
+
 }
 
-var keyRespConf = function(e) {
+var Check = function(buck_moved_, buck_confirm_) {
 
-    if (e === undefined) 
-      keyCode = 0;
-      // var disabled = true; 
+    console.log(buck_moved_)
+  
+    var x = document.getElementById("spacebar");
+    if ((buck_moved_ == 1) || (buck_confirm_==1)) {
+      x.style.visibility = "visible";
+    } else {
+      x.style.visibility = "hidden";
+    }
+}
 
-       // When this is a timeout, e will be undefined.
-    else keyCode = e.keyCode;
-      // var disabled = false; 
-    
-    if (!confListening) return false; //if not listening, return false]
 
-		var conf_confirm = 0;
-	  var conf_moved   = 0; // has confInd moved?
-		var conf_move    = 0;
+    var keyRespBuck = function( e ) {
+        if ( e === undefined ) keyCode = 0;
 
-    switch (keyCode) {
-      case leftKey:
-      conf_move  = -1;
-      conf_moved = 1;
-      break;
-      case rightKey:
-      conf_move  = 1;
-      conf_moved = 1;
-      break;
-      case 0:
-      conf_move    = 0; //if decide not to move
-      conf_moved   = 0;
-      break;
-      case spaceKey:
-      conf_confirm  = 1;
-      confListening = false;
-      break;
-      default:
-      conf_moved = -1;
-      break;
+        else keyCode = e.keyCode;
+        if(!buckListening) return false; //if not listening, return false
+
+    		  var buck_confirm  = 0; // has bucket moved?
+          var buck_move     = 0; // shift of bucket
+    		  var buck_moved    = 0; // has bucket moved?
+
+        switch (keyCode) {
+          case leftKey:
+          buck_move    = -1*stim_bucketSpeed; //if bucketSpeed is 2, then it moves 2deg each time the key is pressed
+          buck_moved   = 1;
+          break;
+          case rightKey:
+          buck_move    = stim_bucketSpeed; //move in the other direction
+          buck_moved   = 1;
+          break;
+          case 0:
+          buck_move    = 0; //if decide not to move
+          buck_moved   = 0;
+          break;
+          case spaceKey:
+          buck_confirm = 1;
+          buck_done =1;
+          buckListening = false;
+          break;
+          default:
+          buck_moved = -1;
+          break;
+        }
+      // will keep adding as long as bucketPos hasnt been chosen
+      if (buck_moved == 1) { //%if pressed move key, the next position is updated by the bucketspeed for that trial
+
+        if (data_buckPos + buck_move >= 0) {
+          data_buckPos = data_buckPos + buck_move;
+        }else {
+          data_buckPos = mod(buck_move,stim_cirNPos-1);
+        }
+
+        bucket.bucket1.remove();
+        bucket.bucket2.remove();
+        bucket = draw_bucket (canvas_xCenter,canvas_yCenter, stim_cirDia, stim_innerCirDia,stim_bucketDia,stim_bucketSize,col_bucket,col_background=false,data_buckPos);
+       
+        // enableBtn();  // Only enable the NEXT button if the spacebar was pressed 
+        
     }
 
-  //Calculate new position of pointer
-  if (conf_moved == 1) {
-    newConf = prevConf + conf_move;
-
-    if (newConf < 1 || newConf > 100) { //making sure the conf doesnt go out of bounds
-      newConf = prevConf;
-    } else {
-    prevConf = newConf;
+  if (buck_done==1){
+    enableBtn()
+    }
+  else {
+  disableBtn()
   }
 
-  var data_conf = newConf;
-  conf_pos      = confConvert(canvas_xCenter,conf_barWidth,data_conf);
-	confInd.remove();
-  confInd       = draw_confInd(canvas_height, conf_indWidth, conf_indHeight, col_bucket, conf_pos); //draw final conf rating
-  enableBtn(); 
-
-
-}else if (conf_moved == 0) {
-  disableBtn(); 
-}
+  Check(buck_moved,buck_confirm); 
 
 }
 
-$(window).focus().keydown(keyRespConf);
+$(window).keydown(keyRespBuck);
 
-var confBar  = draw_confBar(canvas_xCenter, canvas_height, conf_barWidth, conf_barHeight,col_confBar, col_black);
-var prevConf = conf_startPos; //this is to reset confidence indicator to either 25 or 75 after every trial
-var conf_pos = confConvert(canvas_xCenter,conf_barWidth,prevConf);
-var confInd  = draw_confInd(canvas_height, conf_indWidth, conf_indHeight, col_bucket, conf_pos);
+var instructPaper1 = Raphael("ps_instruct_1", canvas_width, canvas_height);
+    // instructPaper1.canvas.style.backgroundColor = col_background; //initialise canvas to be grey
 
-confListening = true;
-keyRespConf();
+
+    instructPaper1.customAttributes.arc = function (centerX, centerY, startAngle, endAngle, innerR, outerR) {
+      var radians = Math.PI / 180,
+      largeArc = +(endAngle - startAngle > 180),
+      // calculate the start and end points for both inner and outer edges of the arc segment
+      // the -90s are about starting the angle measurement from the top get rid of these if this doesn't suit your needs
+      outerX1 = centerX + outerR * Math.cos((startAngle-90) * radians),
+      outerY1 = centerY + outerR * Math.sin((startAngle-90) * radians),
+      outerX2 = centerX + outerR * Math.cos((endAngle-90) * radians),
+      outerY2 = centerY + outerR * Math.sin((endAngle-90) * radians),
+      innerX1 = centerX + innerR * Math.cos((endAngle-90) * radians),
+      innerY1 = centerY + innerR * Math.sin((endAngle-90) * radians),
+      innerX2 = centerX + innerR * Math.cos((startAngle-90) * radians),
+      innerY2 = centerY + innerR * Math.sin((startAngle-90) * radians);
+
+      // build the path array
+      var path = [
+        ["M", outerX1, outerY1], //move to the start point
+        ["A", outerR, outerR, 0, largeArc, 1, outerX2, outerY2], //draw the outer edge of the arc
+        ["L", innerX1, innerY1], //draw a line inwards to the start of the inner edge of the arc
+        ["A", innerR, innerR, 0, largeArc, 0, innerX2, innerY2], //draw the inner arc
+        ["z"] //close the path
+      ];
+      return {path: path};
+    };
+
+
+var circle = draw_defaultCircle(canvas_xCenter, canvas_yCenter, stim_cirDia, stim_innerCirDia, stim_dotDia, col_white, col_background=false);
+var bucket = draw_bucket (canvas_xCenter,canvas_yCenter, stim_cirDia, stim_innerCirDia,stim_bucketDia,stim_bucketSize,col_bucket,col_background=false,data_buckPos);
+var	buck_done = 0;
+var buckListening = true;
+keyRespBuck();
 disableBtn(); 
-
-
-
 
 </script>

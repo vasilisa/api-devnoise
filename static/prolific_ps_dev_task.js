@@ -183,7 +183,7 @@ var data_pracReset     = 1;     //this is the counter for how many times they re
  };
 
  var startInstruc = function(){
-	 instructobject = new Instructions(['ps_instruct_1','ps_instruct_2','ps_instruct_3','ps_instruct_4']);
+	 instructobject = new Instructions(['ps_instruct_1','ps_instruct_2','ps_instruct_3','ps_instruct_4','ps_instruct_5','ps_instruct_6']);
 	 finish();
 	 startTask();
  };
@@ -219,7 +219,7 @@ var data_pracReset     = 1;     //this is the counter for how many times they re
                       if(this.id =="coinAimCheck"){
                       correct = (this.value == 3)? 1 : 0; // this is modified for kids 
                          if(correct === 0){
-                         instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2', 'ps_instruct_3','ps_instruct_4']);
+                         instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2', 'ps_instruct_3','ps_instruct_4','ps_instruct_5','ps_instruct_6']);
 												 	data_pracReset++;
                       is_quiz     = true;
 											is_training = true;
@@ -231,7 +231,7 @@ var data_pracReset     = 1;     //this is the counter for how many times they re
                       else if(this.id =="coinFlyCheck"){
                       correct = (this.value == 3)? 1 : 0;
                          if(correct === 0){
-                         instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2','ps_instruct_3','ps_instruct_4']);
+                         instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2','ps_instruct_3','ps_instruct_4','ps_instruct_5','ps_instruct_6']);
 												 data_pracReset++;
                       is_quiz = true;
 											is_training = true;
@@ -243,7 +243,7 @@ var data_pracReset     = 1;     //this is the counter for how many times they re
                       else if(this.id == "confRateCheck"){
                       correct = (this.value == 2)? 1 : 0;
                          if(correct === 0){
-                         instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2', 'ps_instruct_3','ps_instruct_4']);
+                         instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2', 'ps_instruct_3','ps_instruct_4','ps_instruct_5','ps_instruct_6']);
 												 	data_pracReset++;
                       is_quiz = true;
 											is_training = true;
@@ -255,7 +255,7 @@ var data_pracReset     = 1;     //this is the counter for how many times they re
 											else if(this.id =="HighConfCheck"){
 											correct = (this.value == 2)? 1 : 0;
 												 if(correct === 0){
-												 instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2','ps_instruct_3','ps_instruct_4']);
+												 instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2','ps_instruct_3','ps_instruct_4','ps_instruct_5','ps_instruct_6']);
 												 	data_pracReset++;
 											is_quiz = true;
 											is_training = true;
@@ -267,7 +267,7 @@ var data_pracReset     = 1;     //this is the counter for how many times they re
 											else if(this.id == "LowConfCheck"){
 											correct = (this.value == 3)? 1 : 0;
 												 if(correct === 0){
-												 instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2', 'ps_instruct_3','ps_instruct_4']);
+												 instructobject = new Instructions(['ps_instruct_0','ps_instruct_1','ps_instruct_2', 'ps_instruct_3','ps_instruct_4','ps_instruct_5','ps_instruct_6']);
 											data_pracReset++;
 											is_quiz = true;
 											is_training = true;
@@ -279,7 +279,7 @@ var data_pracReset     = 1;     //this is the counter for how many times they re
 
                       });
      if(correct ==1){ //if all correct, head on to start page for actual experiment
-     instructobject = new Instructions(['ps_instruct_5']);
+     instructobject = new Instructions(['ps_instruct_7']);
      is_quiz     = false; //finished instruction quiz
      is_training = false;//just going to start practice round
      startTask();
@@ -494,10 +494,10 @@ var ExptPhase = function() {
 
     // THIS IS TO CALCULATE CPP AND PRESET PARTICLE LOCATION (IN DEGREES) FOR STABLE AND VOLATILE BLOCKS
  		var nCond          = set_cond.length; // just one condition with High Hazard rate 
-    var nTrialsPerCond = 4; // 150; 
-		var nTrialsPrac    = 2;   // DEBUG ORIG = 10
+    var nTrialsPerCond = 150; // 150; 
+		var nTrialsPrac    = 10;   // DEBUG ORIG = 10
 		var nTrialsTotal   = nTrialsPerCond*nCond; // 1 condition 
-		var nBlocks        = 2;   //  3 blocks of 50 trials each DEBUG ORIG = 5 
+		var nBlocks        = 3;   //  3 blocks of 50 trials each DEBUG ORIG = 5 
 		var nTrialsPerBlock= Math.floor(nTrialsTotal/nBlocks); //this has to be divisible by nBlocks
 
 

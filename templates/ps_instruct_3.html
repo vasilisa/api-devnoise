@@ -1,27 +1,17 @@
-<script>
-
-//setTimeout(function(){ $('div#nextButton').css('visibility','visible'); }, 8000);
-
-</script>
-
 <div class="instruct" id="main">
 
-  <p><strong style="color:white;">Do your best to rate your confidence accurately! 
-  <p>Be sure to make use of the FULL LENGTH of the scale throughout the game.</p><strong></p>
-  
+  <p>After you have positioned the space bucket on the ring, you will rate how confident you are that the asteroid will land on the bucket.</p>
+  <p>Your confidence can range from <strong>low</strong> to <strong>high</strong>.</p>
+  <br>
+  <p>A <strong style="color:white">low</strong> confidence means that you are <strong style="color:white;">very uncertain</strong> that the asteroid will land in your bucket. <br>
+  A <strong style="color:white">high</strong> confidence means that you are <strong style="color:white;">very certain</strong> that the asteroid will land in your bucket.</p>
 
-  <p>For example, if I was pretty sure but not 100% certain I might mark my confidence here:</p>
-
-  <img class="keyboard" src="/static/images/exampleconf1.png" alt="image failed to load" style="width:700px; height:150px;padding-top:5px; padding-bottom:1px; position:relative">
-  
-  <p>Or if I thought there might be only a small chance the asteroid will land in the bucket I might mark my confidence here: </p>
-
-  <img class="keyboard" src="/static/images/exampleconf2.png" alt="image failed to load" style="width:700px; height:120px;padding-top:5px; padding-bottom:1px; position:relative">
-  
-  <p>When giving your confidence try to respond as quickly and accurately as possible!</p>
-
-<br>
-<div id="nextButton" style="visibility: visible;">
-<input type="button" class="continue" id="Next" value="Next" style="background-color: #4CAF50;"/>
+  <div id="nextButton" style="visibility: visible;">
+  <input type="button" class="continue" id="continue" value="Next" />
+  </div>
 </div>
-</div>
+
+<script type="text/javascript">
+  document.getElementById("continue").disabled = false;
+  document.getElementById('continue').style = 'background-color: #4CAF50;';
+</script>
