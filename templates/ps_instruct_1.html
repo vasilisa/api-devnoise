@@ -9,7 +9,7 @@
   <p>So, you need to predict where the next asteroid piece will land. If the asteroid lands on the bucket, you <strong style="color:white;">win</strong> points. But if it doesn’t, you <strong style="color:white;">lose</strong> points.
 
   <p>Usually the asteroid lands in <strong>about the same location, but sometimes this will change!</strong></p>
-  <p>Let's try it now.</p>
+  <p>Try moving the bucket now!</p>
   <p>To move the bucket press either <strong style="color:#56D8DB;">LEFT</strong> or <strong style="color:#EA3C13;">RIGHT</strong> ARROW keys.</p>
   </div>
 
@@ -25,6 +25,19 @@
 </div>
 
 <script type="text/javascript">
+
+function disableBtn() {
+  document.getElementById("continue").disabled = true;
+  document.getElementById('continue').style = 'background-color:#e7e7e7;';
+
+}
+
+function enableBtn() {
+  document.getElementById("continue").disabled = false;
+  document.getElementById('continue').style = 'background-color: #4CAF50;';
+
+}
+
 
 // for keyboard functions
 var leftKey  = 37;
@@ -98,14 +111,14 @@ function draw_bucket(canvas_xCenter, canvas_yCenter, stim_cirDia, stim_innerCirD
 }
 
     var keyRespBuck = function( e ) {
-        if ( e === undefined ) keyCode = 0;  // When this is a timeout, e will be undefined.
+        if ( e === undefined ) keyCode = 0;
 
         else keyCode = e.keyCode;
         if(!buckListening) return false; //if not listening, return false
 
     		  var buck_confirm  = 0; // has bucket moved?
-          var buck_move  = 0; // shift of bucket
-    		  var buck_moved  = 0; // has bucket moved?
+          var buck_move     = 0; // shift of bucket
+    		  var buck_moved    = 0; // has bucket moved?
 
         switch (keyCode) {
           case leftKey:
@@ -143,6 +156,8 @@ function draw_bucket(canvas_xCenter, canvas_yCenter, stim_cirDia, stim_innerCirD
         bucket = draw_bucket (canvas_xCenter,canvas_yCenter, stim_cirDia, stim_innerCirDia,stim_bucketDia,stim_bucketSize,col_bucket,col_background=false,data_buckPos);
       }
 
+      enableBtn(); 
+      
     }
 
 $(window).keydown(keyRespBuck);
@@ -184,6 +199,7 @@ var bucket = draw_bucket (canvas_xCenter,canvas_yCenter, stim_cirDia, stim_inner
 var	buck_done = 0;
 var buckListening = true;
 keyRespBuck();
+disableBtn()
 
 
 

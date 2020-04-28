@@ -1,4 +1,5 @@
-from flask import current_app as app, jsonify, request, render_template, redirect
+from flask import current_app as app, jsonify, request, render_template, redirect, make_response
+from flask_mail import Mail, Message 
 
 from models import Test, BaseObject, db
 # from collections import OrderedDict
@@ -15,6 +16,7 @@ COMPLETED = 3
 DEBRIEFED = 4
 QUITEARLY = 6
 
+mail = Mail(app)
 
 @app.route('/', methods=['GET']) # ROUTE TO START EXPERIMENT 
 
@@ -139,63 +141,17 @@ def savedata():
     result = dict({"success": "yes"}) 
 
     print("Exp task done route, status is", user.status)
-    
-    # return render_template('payment.html')
-    return render_template('feedback.html') # TO BE CHANGED TO JUST DEBRIEFING FINAL PAGE 
 
-@app.route('/redirect', methods=['POST'])
-def redirect_(): 
-    
-    return redirect("https://devcompsy.org")
+    # Send the email confirmation 
+    msg = Message(body      ="Coucou, participant {0} just finished the BUCKET task".format(prolific_id),
+                  subject   ='Curious Development Study',
+                  recipients=["vasilisaskv@gmail.com"])
 
-    
+    mail.send(msg)
+    # return {'message': 'It worked?'}, 200
 
-
-# TO BE ADD CHANGED FEEDBACK HERE 
-# @app.route('/feedbackDone', methods=['POST']) # not sure where it is called 
-
-# def startfeedback():
-
-#     """
-#         User has finished the feedback and is posting their data in the form of a
-#         (long) string. They will receive a prolific validation page back.
-
-#     """
-#     print("accessing the /feedbackDone route")
-
-#     prolific_id    = request.form['prolific_id']
-#     study_id       = request.form['study_id']
-#     participant_id = request.form['participant_id']
-#     longit_id      = request.form['longit_id']
-    
-#     when           = request.form['when']
-    
-#     print("saving the feedback data of subject {1} for study {0} in time point {2}".format(prolific_id,study_id,longit_id))
-    
-#     if ('prolific_id' in request.form) and ('feedbackDatastring' in request.form): 
-#         prolific_id         = request.form['prolific_id']
-#         feedbackDatastring  = request.form['feedbackDatastring']
-    
-#         print("getting the feedback save data {0} for prolific ID {1} and longit ID {2}".format(feedbackDatastring,prolific_id,longit_id))
-#         user = Test.query.\
-#             filter(Test.prolific_id == prolific_id).\
-#             filter(Test.longit_id == longit_id).\
-#             one()
-        
-#         user.feedback   = feedbackDatastring
-#         user.status     = DEBRIEFED
-#         user.endexp     = datetime.datetime.now()
-        
-#         BaseObject.check_and_save(user)
-
-#         result = dict({"success": "yes"}) 
-
-#         print("Feedback done route, status is", user.status)
-
-
-#     return render_template('payment.html') # proceed to the validation prolific page 
-
-    
+#    return "Success" 
+    render_template('debriefing.html')
 
 @app.route('/inexp', methods=['POST']) # not sure where it is called 
 def enterexp():

@@ -1,16 +1,18 @@
-<html>
-  <script src="static/jquery-3.5.0.js" type="text/javascript"> </script>
-  <link rel=stylesheet href="static/questTask.css/" type="text/css" media="screen">
-  <script type="text/javascript">
+<!doctype html>
 
-  console.log('Feedback') 
+<link rel='stylesheet' type='text/css' href='static/task.css'/>
+<link rel="shortcut icon" href="static/images/favicon.ico">
+<body></body> 
 
-  // This is for the external redirection to a new template function endExpt(){
-  //   window.location='end?prolific_id=' + prolific_id + '&participant_id=' + participant_id + '&study_id=' + study_id +'&longit_id='+ longit_id;
-  //   }
+<script src="static/jquery-min.js" type="text/javascript">
+        
+  window.onbeforeunload = null;   // redirect after 10 sec 
+  window.location.replace("https://devcompsy.org");
+  
+</script>
 
-
- // Get the input field
+ 
+ <!-- // Get the input field
  var input = document.getElementById("FeedbackId");
 
  $(document).on("keydown", ":input:not(text)", function(event) {
@@ -44,7 +46,7 @@
 </div>
 </div>
 </center>
-</div>
+</div> -->
 
 <!-- This is for external redirection to a new template <input type="button" class="continue" id="continue" value="Next" style="visibility: visible;" onclick=endExpt();></input>
 </form>
@@ -53,6 +55,6 @@
 </div>
 action="feedbackSave" method="post">
  -->
- </html>
+
 
 

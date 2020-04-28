@@ -4,28 +4,38 @@
 
   <div id="ps_instruct_2"></div>
 
-  <p>Let's try it now.</p>
+  <p>Try using the slider now!</p>
 
   <p>A <strong style="color:white">low</strong> confidence means that you are <strong style="color:white;">very uncertain</strong> that the asteroid will land in your bucket. <br>
   A <strong style="color:white">high</strong> confidence means that you are <strong style="color:white;">very certain</strong> that the asteroid will land in your bucket.</p>
 
   <p>The small orange bar in the middle of the scale indicates your level of confidence.</p> 
   
-  <p>To show that you are <strong style="color:white">less</strong> certain, move the orange indicator <strong style="color:#56D8DB;">leftward</strong> by pressing the <strong style="color:#56D8DB;;">LEFT ARROW</strong> key.<br>
-  To show that you are <strong style="color:white">more</strong> certain, move the orange <strong style="color:#EA3C13;">rightward</strong> by pressing the <strong style="color:#EA3C13;">RIGHT ARROW</strong> key.</p>
+  <p>To show that you feel <strong style="color:white">less</strong> certain, move the orange indicator <strong style="color:#56D8DB;">leftward</strong> by pressing the <strong style="color:#56D8DB;;">LEFT ARROW</strong> key.<br>
+  To show that you feel <strong style="color:white">more</strong> certain, move the orange <strong style="color:#EA3C13;">rightward</strong> by pressing the <strong style="color:#EA3C13;">RIGHT ARROW</strong> key.</p>
   
   <p>Press the <strong style="color:#54DC5E;">SPACEBAR</strong> to <strong>confirm</strong> your confidence indicator position.</p>
 
   <img class="keyboard" src="/static/images/keyboard.png" alt="image failed to load" style="width:800px; height:220px;padding-top:5px; padding-bottom:1px; position:relative">
   <div class="instruct" id="main"></div>
-  <p>Please do your best to rate your confidence accurately!</p> 
-  <p>Be sure to make use of the full length of the scale throughout the task.</p>
   <div id="nextButton" style="visibility: visible;">
   <input type="button" class="continue" id="continue" value="Next" />
   </div>
   </div>
 
 <script type="text/javascript">
+
+function disableBtn() {
+  document.getElementById("continue").disabled = true;
+  document.getElementById('continue').style = 'background-color:#e7e7e7;';
+
+}
+
+function enableBtn() {
+  document.getElementById("continue").disabled = false;
+  document.getElementById('continue').style = 'background-color: #4CAF50;';
+
+}
 
 //setTimeout(function(){ $('div#nextButton').css('visibility','visible'); }, 8000);
 // for keyboard functions
@@ -111,21 +121,27 @@ function draw_confInd(canvas_height, conf_indWidth, conf_indHeight, col_bucket, 
 
 var keyRespConf = function(e) {
 
-    if (e === undefined) keyCode = 0; // When this is a timeout, e will be undefined.
+    if (e === undefined) 
+      keyCode = 0;
+      // var disabled = true; 
+
+       // When this is a timeout, e will be undefined.
     else keyCode = e.keyCode;
+      // var disabled = false; 
+    
     if (!confListening) return false; //if not listening, return false]
 
 		var conf_confirm = 0;
-	  var conf_moved = 0; // has confInd moved?
-		var conf_move = 0;
+	  var conf_moved   = 0; // has confInd moved?
+		var conf_move    = 0;
 
     switch (keyCode) {
       case leftKey:
-      conf_move = -1;
+      conf_move  = -1;
       conf_moved = 1;
       break;
       case rightKey:
-      conf_move = 1;
+      conf_move  = 1;
       conf_moved = 1;
       break;
       case 0:
@@ -133,7 +149,7 @@ var keyRespConf = function(e) {
       conf_moved   = 0;
       break;
       case spaceKey:
-      conf_confirm = 1;
+      conf_confirm  = 1;
       confListening = false;
       break;
       default:
@@ -152,25 +168,28 @@ var keyRespConf = function(e) {
   }
 
   var data_conf = newConf;
-  conf_pos = confConvert(canvas_xCenter,conf_barWidth,data_conf);
+  conf_pos      = confConvert(canvas_xCenter,conf_barWidth,data_conf);
 	confInd.remove();
-  confInd = draw_confInd(canvas_height, conf_indWidth, conf_indHeight, col_bucket, conf_pos); //draw final conf rating
+  confInd       = draw_confInd(canvas_height, conf_indWidth, conf_indHeight, col_bucket, conf_pos); //draw final conf rating
+  enableBtn(); 
+
 
 }else if (conf_moved == 0) {
-
+  disableBtn(); 
 }
 
 }
 
 $(window).focus().keydown(keyRespConf);
-var confBar = draw_confBar(canvas_xCenter, canvas_height, conf_barWidth, conf_barHeight,col_confBar, col_black);
 
+var confBar  = draw_confBar(canvas_xCenter, canvas_height, conf_barWidth, conf_barHeight,col_confBar, col_black);
 var prevConf = conf_startPos; //this is to reset confidence indicator to either 25 or 75 after every trial
 var conf_pos = confConvert(canvas_xCenter,conf_barWidth,prevConf);
-var confInd = draw_confInd(canvas_height, conf_indWidth, conf_indHeight, col_bucket, conf_pos);
+var confInd  = draw_confInd(canvas_height, conf_indWidth, conf_indHeight, col_bucket, conf_pos);
 
 confListening = true;
 keyRespConf();
+disableBtn(); 
 
 
 

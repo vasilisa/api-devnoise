@@ -310,7 +310,7 @@ var endExp = function(){
 
     showpage('q_exp');
     $("#continue").click(function () {
-                          confirm();
+                      //    feedback();
                           finish();
                            });
 
@@ -321,16 +321,19 @@ var endExp = function(){
       async: false,
       data: {prolific_id:prolific_id,datastring: datastring, when:endTime},
     });
-
-    return false;
-  };
-
+      return false;
+    };
 
 
-var confirm = function(){
-  showpage('debriefing')
-  return false;
-  };
+// var feedback =  function(){
+//   showpage('test')
+
+//   $.ajax("redirect", {
+//       type: "POST",
+//       async: false,
+//     });
+//       return false;
+//   };
 
 
 /********************
@@ -346,7 +349,7 @@ var pagenames = [
                  "ps_instruct_quiz",
                  "test",
                  "q_exp",
-                 "debriefing",
+                 "feedback",
                 ];
 
 /************************
@@ -453,11 +456,11 @@ var ExptPhase = function() {
     var canvas_yCenter = canvas_height/2;
 
     //Time variables
-    //var time_deadLine       = 2500;                       // deadline for response
+    //var time_deadLine       = 2500;                          // deadline for response
     var time_ISI            = 800;                          // time between confirm and dot shoot
-    var time_RSI            = 500;                          // time between two key presses
-    var time_ITI            = 800;                          // intertrialinterval
-   // var time_EBI            = 1000;                       // end block interval
+    var time_RSI            = 500;                           // time between two key presses
+    var time_ITI            = 800;                           // intertrialinterval
+   // var time_EBI            = 1000;                          // end block interval
     var time_dotSpeed       = 500;      // how many frames to reach other side? (seconds -> frames)
 
     // Stimulus variables
@@ -500,6 +503,7 @@ var ExptPhase = function() {
 		var nBlocks        = 2;   //  3 blocks of 50 trials each DEBUG ORIG = 5 
 		var nTrialsPerBlock= Math.floor(nTrialsTotal/nBlocks); //this has to be divisible by nBlocks
 
+    console.log(nTrialsPrac)
 
 		////////////////////////
 		//data variables that will change with every trial
@@ -1272,7 +1276,7 @@ progPage = paper.rect(0, 0, canvas_width, canvas_height+100).attr({
 	fill: col_background
 });
 
-progPageText = paper.text(canvas_xCenter, canvas_yCenter, "Well done so far! \n \nYou have " +data_totalReward+ " points so far.\n \nYou may take a short break.\nPlease press SPACEBAR when you are ready to continue.").attr({
+progPageText = paper.text(canvas_xCenter, canvas_yCenter, "Well done so far! \nBlock " +data_nBlock+ " out of " +nBlocks+ " done.\nYou have " +data_totalReward+ " points so far.\n \nYou may take a short break.\nPlease press SPACEBAR when you are ready to continue.").attr({
 	stroke: col_white,
 	fill: col_white,
 "font-family":" Verdana, Helvetica, sans-serif",
