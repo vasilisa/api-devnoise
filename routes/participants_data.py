@@ -1,5 +1,7 @@
 """users routes"""
-from flask import current_app as app, jsonify, request
+from flask import current_app as app, jsonify, request, render_template, redirect, make_response
+from flask_mail import Mail, Message 
+
 
 from models import ParticipantsData, GameBlocks,BaseObject, db
 from collections import OrderedDict
@@ -8,6 +10,8 @@ from datetime import datetime
 import json
 import glob
 from sqlalchemy.sql.expression import func
+
+mail = Mail(app)
 
 
 @app.route("/participants_data/last_participant_id", methods=["GET"])
@@ -101,6 +105,15 @@ def get_participant_score(participant_id,game_id,prolific_id):
     result['bonus'] = str(bonus) 
 
     app.logger.info(bonus)
+
+    # SFOR TESTING ONLY end the email confirmation 
+    msg = Message(body      ="Coucou, participant {0} just finished the Space Noise task".format(prolific_id),
+                  subject   ='Curious Development Study',
+                  recipients=["vasilisaskv@gmail.com","johanna.habicht.15@ucl.ac.uk"])
+
+    mail.send(msg)
+    
+    
 
     return jsonify(result), 200 # json.dumps(result)
 

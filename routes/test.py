@@ -143,15 +143,9 @@ def savedata():
     print("Exp task done route, status is", user.status)
 
     # SFOR TESTING ONLY end the email confirmation 
-    msg = Message(body      ="Coucou, participant {0} just finished the BUCKET task".format(prolific_id),
+    msg = Message(body      ="Coucou, participant {0} just finished the Space Clen task".format(prolific_id),
                   subject   ='Curious Development Study',
                   recipients=["vasilisaskv@gmail.com","johanna.habicht.15@ucl.ac.uk"])
-
-    mail.send(msg)
-    
-    msg = Message(body      ="Coucou, participant {0} just finished the BUCKET task".format(prolific_id),
-                  subject   ='Curious Development Study',
-                  recipients=["johanna.habicht.15@ucl.ac.uk"])
 
     mail.send(msg)
     
