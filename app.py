@@ -47,7 +47,7 @@ app.config.update(dict(
     MAIL_USE_TLS        = False, # config.get('Mail Parameters', 'MAIL_USE_TLS'), # same as for the server in general 
     MAIL_USE_SSL        = True, # config.get('Mail Parameters', 'MAIL_USE_SSL'), # same as for the server in general 
     MAIL_USERNAME       = 'irm.vasilisa@gmail.com', # config.get('Mail Parameters', 'MAIL_USERNAME'), # same as for the server in general 
-    MAIL_PASSWORD       = 'inference', # config.get('Mail Parameters', 'MAIL_PASSWORD'), # same as for the server in general 
+    MAIL_PASSWORD       = 'DeboShir@1231', # config.get('Mail Parameters', 'MAIL_PASSWORD'), # same as for the server in general 
     MAIL_DEFAULT_SENDER = 'irm.vasilisa@gmail.com'
 ))
 
